@@ -904,7 +904,7 @@
                         <h3>Formulario de contacto:</h3>
                       </div>
 
-                      <form id="contact_form" class="contact-form" action="contact_form/contact_form.php" method="post">
+                      <form id="contact_form" class="contact-form" action="contact_form/contact_form2.php" method="post">
 
                         <div class="messages"></div>
 
@@ -943,9 +943,13 @@
                             </div>
                           </div>
 
-                          <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI"></div>
+                          <!--<div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI"></div>-->
+                          <!-- honeypot anti-spam -->
+                          <input type="text" name="company" tabindex="-1" autocomplete="off" style="display:none">
 
+                          <!--Boton-->
                           <input type="submit" class="button btn-send" value="Enviar">
+                          <p id="formMsg" role="status" aria-live="polite"></p>
                         </div>
                       </form>
                     </div>

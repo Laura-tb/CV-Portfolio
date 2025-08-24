@@ -1,5 +1,6 @@
 <?php
 
+echo 'Hola';
 // configure
 $from = 'lauratrillo1990@gmail.com'; // Replace it with Your Hosting Admin email. REQUIRED!
 $sendTo = 'lauratrillo1990@gmail.com'; // Replace it with Your email. REQUIRED!
