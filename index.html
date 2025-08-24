@@ -36,11 +36,11 @@
     <header id="site_header" class="header mobile-menu-hide">
       <div class="header-content clearfix">
         <div class="my-photo">
-          <img src="images/photo1.jpg" alt="image">
+          
         </div>
 
         <div class="site-title-block">
-          <div class="site-title">Laura Trillo</div>
+          <div class="site-title"></div>
         </div>
 
         <!-- Navigation -->
@@ -87,10 +87,10 @@
       <div class="mobile-logo-container">
         <div class="mobile-header-image">
           <a href="#">
-            <img src="images/photo1.jpg" alt="image">
+            
           </a>
         </div>
-        <div class="mobile-site-title"><a href="#">Laura Trillo</a></div>
+        <div class="mobile-site-title"><a href="#"></a></div>
       </div>
 
       <a class="menu-toggle mobile-visible">
@@ -115,12 +115,12 @@
             <div class="section-inner start-page-full-width">
               <div class="start-page-full-width">
                 <div class="row">
-                  <div class="col-sm-12 col-md-6 col-lg-6">
+                  <div class="col-sm-12 col-md-3 col-lg-3">
                     <div class="inner-content">
                       <div class="fill-block"></div>
                     </div>
                   </div>
-                  <div class="col-sm-12 col-md-6 col-lg-6">
+                  <div class="col-sm-12 col-md-9 col-lg-9">
                     <div class="inner-content">
                       <div class="hp-text-block">
                         <!-- Text rotation / Subtitle -->
@@ -860,7 +860,7 @@
 
                 <!-- Contact Info -->
                 <div class="row">
-                  <div class="col-xs-12 col-sm-3">
+                  <div class="col-xs-12 col-sm-4">
                     <div class="col-inner bs-30">
                       <div class="lm-info-block gray-default">
                         <i class="lnr lnr-phone-handset"></i>
@@ -871,7 +871,7 @@
                     </div>
                   </div>
 
-                  <div class="col-xs-12 col-sm-3">
+                  <div class="col-xs-12 col-sm-4">
                     <div class="col-inner bs-30">
                       <div class="lm-info-block gray-default">
                         <i class="lnr lnr-map-marker"></i>
@@ -882,7 +882,7 @@
                     </div>
                   </div>
 
-                  <div class="col-xs-12 col-sm-3">
+                  <div class="col-xs-12 col-sm-4">
                     <div class="col-inner bs-30">
                       <div class="lm-info-block gray-default">
                         <i class="lnr lnr-envelope"></i>
@@ -904,7 +904,7 @@
                         <h3>Formulario de contacto:</h3>
                       </div>
 
-                      <form id="contact_form" class="contact-form" action="contact_form/contact_form.php" method="post">
+                      <form id="contact_form" class="contact-form" action="contact_form/contact_form2.php" method="post">
 
                         <div class="messages"></div>
 
@@ -943,9 +943,13 @@
                             </div>
                           </div>
 
-                          <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI"></div>
+                          <!--<div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI"></div>-->
+                          <!-- honeypot anti-spam -->
+                          <input type="text" name="company" tabindex="-1" autocomplete="off" style="display:none">
 
+                          <!--Boton-->
                           <input type="submit" class="button btn-send" value="Enviar">
+                          <p id="formMsg" role="status" aria-live="polite"></p>
                         </div>
                       </form>
                     </div>

@@ -31,7 +31,7 @@
     }
     // /Portfolio subpage filters
 
-    // Contact form validator
+    /* Contact form validator
     $(function () {
 
         $('#contact_form').validator();
@@ -60,7 +60,7 @@
             }
         });
     });
-    // /Contact form validator
+    // /Contact form validator*/
 
     // Hide Mobile menu
     function mobileMenuHide() {
@@ -360,5 +360,18 @@
 
         scrollTop();
     });
+
+    // Envio formulario por email y/o BD
+    const f = document.getElementById('contact_form'), msg = document.getElementById('formMsg');
+    if (f) {
+        f.addEventListener('submit', async (e) => {
+            e.preventDefault(); msg.textContent = 'Enviando…';
+            const fd = new FormData(f);
+            const r = await fetch('contact_form/contact_form2.php', { method: 'POST', body: fd });
+            const j = await r.json().catch(() => ({ ok: false }));
+            msg.textContent = j.ok ? '¡Gracias! Mensaje enviado.' : (j.error || 'Error al enviar');
+            if (j.ok) f.reset();
+        });
+    }
 
 })(jQuery);
