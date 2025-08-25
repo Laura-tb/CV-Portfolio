@@ -109,7 +109,7 @@
               <article class="post">
 
                 <div class="post-thumbnail">
-                  <img src="./images/blog/lista_CAM2.JPG" alt="image">
+                  <img src="./images/blog/sap_abap.JPG" alt="image">
                 </div>
 
                 <div class="post-content">
@@ -117,12 +117,11 @@
                   <header class="entry-header">
                     <!-- Entry meta -->
                     <div class="entry-meta entry-meta-top">
-                      <span><a href="#" rel="category tag">Automatizaciones</a></span>        
+                      <span><a href="#" rel="category tag">IA</a></span>        
                     </div>
                     <!-- /Entry meta -->
 
-                    <h2 class="entry-title">Automatización de Lista de Espera quirúrgica - Comunidad de
-                                Madrid</h2>
+                    <h2 class="entry-title">Iniciándome en Programación SAP ABAP</h2>
                   </header>
                   <!-- /Entry header -->
 
@@ -131,34 +130,48 @@
                     <div class="row">
                       <div class=" col-xs-12 col-sm-12 ">
                         <div class="col-inner">
-                          
+                          <h3 style="text-decoration:underline;">Descubriendo SAP en la gestión empresarial del sector alimentario</h3>
+
                           <p>
-                          En este proyecto se aborda la <strong>automatización del proceso de consulta de la lista de espera quirúrgica de la Comunidad de Madrid</strong>. El objetivo principal es eliminar la necesidad de realizar comprobaciones manuales, garantizando un seguimiento continuo y notificaciones automáticas en caso de cambios en la posición del paciente.
+                          En el camino de búsqueda de herramientas que permitan a las empresas ser más eficientes y competitivas, descubrí <strong>SAP</strong> como una de las plataformas más potentes para la <strong>gestión de diferentes ámbitos de la organización</strong>. En sectores tan exigentes como la <strong>industria alimentaria</strong>, SAP se ha convertido en un aliado clave, ya que permite integrar procesos de <strong>producción, calidad, logística, finanzas y recursos humanos</strong> en un mismo sistema, aportando trazabilidad, seguridad y eficiencia.
                           </p>
 
                           <p>
-                          El flujo implementado se basa en un acceso autenticado al portal, utilizando las credenciales que requiere el sistema: <strong>fecha de nacimiento del paciente</strong> y el <strong>código proporcionado por el área de Admisión del hospital</strong>. A partir de ahí, el proceso se gestiona con un script desarrollado en <strong>Python</strong>.
+                          <strong>¿Qué es SAP?</strong><br>
+                          SAP es un <strong>ERP (Enterprise Resource Planning)</strong>, es decir, un software que centraliza y gestiona de forma integrada todos los procesos de negocio de una empresa. Gracias a SAP, las compañías pueden conectar diferentes áreas que antes trabajaban de manera aislada, asegurando que la información fluya de forma consistente y en tiempo real.
                           </p>
 
                           <p>
-                          <strong>Componentes técnicos de la solución:</strong>
-                          <ul style="text-align:justify;">
-                            <li><strong>Login automático</strong>: uso de librerías de Python para realizar la autenticación en el portal mediante POST requests.</li>
-                            <li><strong>Extracción de datos</strong>: una vez autenticados, el script consulta la posición actual en la lista de espera quirúrgica y la almacena en memoria.</li>
-                            <li><strong>Persistencia</strong>: los resultados se registran en un archivo <strong>Excel</strong> mediante la librería <code>openpyxl</code>, lo que permite mantener un histórico de posiciones.</li>
-                            <li><strong>Comparación de estados</strong>: en cada ejecución, se comparan los datos obtenidos con la lectura anterior para identificar variaciones en el número de puesto.</li>
-                            <li><strong>Notificaciones</strong>: si se detecta una modificación, se genera un <strong>correo electrónico automático</strong> utilizando <code>smtplib</code> informando del cambio.</li>
-                            <li><strong>Automatización de ejecución</strong>: el proceso se programa mediante el <strong>Programador de Tareas de Windows</strong>, que ejecuta el script con la periodicidad definida.</li>
+                          <strong>¿Qué es SAP ABAP?</strong><br>
+                          ABAP (Advanced Business Application Programming) es el <strong>lenguaje de programación propio de SAP</strong>. Permite desarrollar aplicaciones, personalizaciones y mejoras dentro del entorno SAP. En otras palabras, ABAP es lo que hace posible adaptar SAP a las necesidades concretas de cada empresa, creando reportes, formularios, integraciones o procesos específicos.
+                          </p>
+
+                          <p>
+                          <strong>Módulos principales de SAP</strong><br>
+                          SAP se estructura en <strong>módulos</strong>, cada uno especializado en un área de negocio. Algunos de los más relevantes son:
+                          <ul>
+                            <li><strong>MM (Materials Management)</strong>: gestión de compras y aprovisionamiento.</li>
+                            <li><strong>PP (Production Planning)</strong>: planificación y control de la producción.</li>
+                            <li><strong>QM (Quality Management)</strong>: gestión de la calidad en procesos y productos.</li>
+                            <li><strong>SD (Sales and Distribution)</strong>: gestión de ventas, distribución y facturación.</li>
+                            <li><strong>FI (Financial Accounting)</strong>: contabilidad financiera y gestión de cuentas.</li>
+                            <li><strong>CO (Controlling)</strong>: control de gestión y análisis de costes.</li>
+                            <li><strong>HR/HCM (Human Resources / Human Capital Management)</strong>: gestión de personal y nóminas.</li>
+                            <li><strong>WM/EWM (Warehouse Management / Extended Warehouse Management)</strong>: gestión de almacenes y logística.</li>
                           </ul>
                           </p>
 
                           <p>
-                          De esta forma, se consigue una <strong>automatización completa del ciclo de consulta, almacenamiento y notificación</strong>, liberando al paciente o al familiar de la necesidad de revisar manualmente el portal. Además, el enfoque modular permite extender la solución, por ejemplo, integrándola con sistemas de mensajería instantánea (Telegram, Teams, Slack) o dashboards de monitorización en tiempo real.
+                          <strong>De SAP clásico a SAP Cloud con Fiori</strong><br>
+                          La formación en SAP suele comenzar con el uso del <strong>interfaz clásico SAP GUI</strong>, donde los usuarios aprenden a navegar y utilizar las transacciones básicas de los módulos. Sin embargo, el futuro de SAP pasa por la nube con <strong>SAP S/4HANA</strong> y su nueva experiencia de usuario a través de <strong>SAP Fiori</strong>.  
+                          Fiori ofrece una interfaz más <strong>intuitiva, moderna y centrada en la experiencia de usuario</strong>, facilitando el acceso desde cualquier dispositivo y optimizando la productividad de los equipos.
                           </p>
 
                           <p>
-                          Este caso práctico demuestra cómo, con un stack muy básico (<strong>Python + Excel + SMTP + Programador de Tareas</strong>), es posible construir una solución de <strong>automatización eficiente y escalable</strong> para un proceso administrativo real.
+                          En definitiva, <strong>SAP representa una herramienta estratégica para el sector alimentario</strong>, ya que integra producción, calidad y gestión en un único sistema. Y con el salto hacia la nube y Fiori, se abre una nueva etapa donde la digitalización y la agilidad se convierten en las claves para afrontar los retos del futuro.
                           </p>
+                          
+
                          
                         </div>
                       </div>
@@ -170,7 +183,7 @@
                     <div class="date-author">
                       <span class="entry-date">
                         <a href="#" rel="bookmark">
-                          <i class="far fa-clock"></i> <span class="entry-date"> Junio 2025</span>
+                          <i class="far fa-clock"></i> <span class="entry-date"> Julio 2025</span>
                         </a>
                       </span>
                       <span class="author vcard">
