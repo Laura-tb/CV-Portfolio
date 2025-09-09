@@ -36,7 +36,7 @@
     <header id="site_header" class="header mobile-menu-hide">
       <div class="header-content clearfix">
         <div class="my-photo">
-          
+
         </div>
 
         <div class="site-title-block">
@@ -176,7 +176,8 @@
                           </div>
                           <div class="ci-text">
                             <h4>Diseño y desarrollo de aplicaciones web</h4>
-                            <p>Implementación de aplicaciones web a medida, rápidas, seguras y listas para escalar. Me ocupo del despliegue, integraciones y soporte para que tú te centres en el negocio.</p>
+                            <p>Implementación de aplicaciones web a medida, rápidas, seguras y listas para escalar. Me
+                              ocupo del despliegue, integraciones y soporte para que tú te centres en el negocio.</p>
                           </div>
                         </div>
                         <!-- /Service Item 1 -->
@@ -188,7 +189,8 @@
                           </div>
                           <div class="ci-text">
                             <h4>Desarrollo e implementación de SAP S/4HANA</h4>
-                            <p>Desarrollo ABAP para SAP: ampliaciones Z, reports/ALV, SmartForms, BAPIs y optimizaciones en diferentes módulos SAP.</p>
+                            <p>Desarrollo ABAP para SAP: ampliaciones Z, reports/ALV, SmartForms, BAPIs y optimizaciones
+                              en diferentes módulos SAP.</p>
                           </div>
                         </div>
 
@@ -207,7 +209,8 @@
                           </div>
                           <div class="ci-text">
                             <h4>Asistentes IA</h4>
-                            <p>Desarrollo de herramientas de apoyo para las empresas y responsables de departamentos.</p>
+                            <p>Desarrollo de herramientas de apoyo para las empresas y responsables de departamentos.
+                            </p>
                           </div>
                         </div>
                         <!-- Service Item 3 -->
@@ -219,7 +222,8 @@
                           </div>
                           <div class="ci-text">
                             <h4>Automatización de tareas</h4>
-                            <p>Automatizo procesos repetitivos de tu día a día integrando tus herramientas para ahorrar tiempo y reducir errores.</p>
+                            <p>Automatizo procesos repetitivos de tu día a día integrando tus herramientas para ahorrar
+                              tiempo y reducir errores.</p>
                           </div>
                         </div>
                         <!-- Service Item 4 -->
@@ -914,8 +918,7 @@
                         <h3>Formulario de contacto:</h3>
                       </div>
 
-                      <form id="contact_form" class="contact-form" action="contact_form/contact_form2.php"
-                        method="post">
+                      <form id="contact_form" class="contact-form">
 
                         <div class="messages"></div>
 
@@ -993,6 +996,49 @@
   <!--<script src="https://maps.googleapis.com/maps/api/js?key=YOUR-API-KEY"></script>-->
   <script src="https://maps.googleapis.com/maps/api/js"></script>
   <script src="js/main.js"></script>
+
+  <!-- Script para enviar datos del formulario a Google Sheets -->
+  <script>
+    const ENDPOINT = 'https://script.google.com/macros/s/AKfycbzno1S7cwkKMsFKligFNIlmAfYKzgSDPxpA6j8HLUy5VeY9X2b4ZgQaQ86DZqqGpu6b3Q/exec';
+
+    const form = document.getElementById('contact_form');
+    const msg = document.getElementById('formMsg');
+    const btn = form.querySelector('.btn-send');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      msg.textContent = 'Enviando...';
+      btn.disabled = true;
+
+      const fd = new FormData(form);
+
+      // Honeypot
+      if (fd.get('company')) return reset('');
+
+      fd.append('source', location.href);
+
+      try {
+        const r = await fetch(ENDPOINT, { method: 'POST', body: fd });
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        const data = await r.json();
+
+        if (data.ok) {
+          reset('Enviado correctamente. ¡Gracias!');
+          form.reset();
+        } else {
+          throw new Error(data.error || 'Error desconocido');
+        }
+      } catch (err) {
+        console.error(err);
+        reset('Error al enviar. Inténtalo de nuevo más tarde.');
+      }
+    });
+
+    function reset(text) {
+      msg.textContent = text;
+      btn.disabled = false;
+    }
+  </script>
 </body>
 
 </html>
