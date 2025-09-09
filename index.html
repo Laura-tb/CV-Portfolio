@@ -1000,7 +1000,7 @@
   <!-- Script para enviar datos del formulario a Google Sheets -->
   <script>
     (function () {
-      const ENDPOINT = 'https://script.google.com/macros/s/AKfycbxA9WgY10HcdROH-HJitwmfM1EsY4YPJgPGnZQMvXRig6eBsO-3yT76FXo88b4ygLBM8A/exec'; // tu URL /exec
+      const ENDPOINT = 'https://script.google.com/macros/s/AKfycby-Iwkyk4IGkMHvJIFxHkB2O-7zJEvHzyNWSF2I34SEnLhHy1X3uBWrELpuh_WX7KWL4A/exec'; // tu URL /exec
       const form = document.getElementById('contact_form');
       if (!form) return;
 
@@ -1020,18 +1020,17 @@
         if (fd.get('company')) return reset(''); // honeypot
         fd.append('source', location.href);
 
-        // Opción sencilla (evita CORS): no leemos respuesta
+        /* Opción sencilla (evita CORS): no leemos respuesta
         await fetch(ENDPOINT, { method: 'POST', body: fd, mode: 'no-cors' });
         form.reset();
-        reset('Enviado correctamente. ¡Gracias!');
+        reset('Enviado correctamente. ¡Gracias!');*/
 
-        // Si configuraste CORS en Apps Script con tu dominio, usa esto en su lugar:
-        /*
+        // Si configuraste CORS en Apps Script con tu dominio, usa esto en su lugar:        
         const r = await fetch(ENDPOINT, { method: 'POST', body: fd });
         const data = await r.json();
         if (data.ok) { form.reset(); reset('Enviado correctamente. ¡Gracias!'); }
         else reset('Error en servidor.');
-        */
+        
       });
 
       function reset(text) { msg.textContent = text; btn.disabled = false; }
