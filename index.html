@@ -999,7 +999,7 @@
 
   <!-- Script para enviar datos del formulario a Google Sheets -->
   <script>
-    const ENDPOINT = 'https://script.google.com/macros/s/AKfycbwkk21UKB2O0nWKxjn3DGAnW-vKF6nf983twqRH-9QAdvMjPiinsx6yfe53rYFl7IfqIw/exec';
+    const ENDPOINT = 'https://script.google.com/macros/s/AKfycbwrMu-z9ZRztBE8lgBGI1fR9et3WSbcoA8ruB_1G4xdsj1WpTWXVgidsHdHEFDZX72C/exec';
 
     const form = document.getElementById('contact_form');
     const msg = document.getElementById('formMsg');
@@ -1018,13 +1018,19 @@
       fd.append('source', location.href);
 
       try {
-        const r = await fetch(ENDPOINT, { method: 'POST', body: fd }); // SIN headers
-        const raw = await r.text();                // debug
-        console.log('Status:', r.status, 'Raw:', raw); // debug
-        if (!r.ok) throw new Error(raw);
+        // PRUEBA A: diagnóstico “sin CORS” para confirmar que llega a la hoja
+        // (no podrás leer la respuesta, pero debería escribir en Sheets)
+         const r = await fetch(ENDPOINT, { method:'POST', body: fd, mode:'no-cors' });
+         form.reset(); reset('Enviado (modo diagnóstico). Revisa la hoja Contactos.'); return;
+
+        /* PRUEBA B: normal, con lectura de respuesta
+        const r = await fetch(ENDPOINT, { method: 'POST', body: fd }); // sin headers
+        const raw = await r.text();
+        console.log('Status:', r.status, 'Raw:', raw);
+        if (!r.ok) throw new Error('HTTP ' + r.status + ' ' + raw);
         const data = JSON.parse(raw);
         if (data.ok) { form.reset(); reset('Enviado correctamente. ¡Gracias!'); }
-        else throw new Error(data.error || 'Error');
+        else throw new Error(data.error || 'Error desconocido');*/
       } catch (err) {
         console.error(err);
         reset('Error al enviar. Inténtalo de nuevo más tarde.');
