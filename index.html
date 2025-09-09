@@ -1020,7 +1020,7 @@
       try {
         // PRUEBA A: diagnóstico “sin CORS” para confirmar que llega a la hoja
         // (no podrás leer la respuesta, pero debería escribir en Sheets)
-         const r = await fetch(ENDPOINT, { method:'POST', body: fd, mode:'no-cors' });
+         const r = await fetch(ENDPOINT, { method:'POST', body:new FormData(form) });
          form.reset(); reset('Enviado (modo diagnóstico). Revisa la hoja Contactos.'); return;
 
         /* PRUEBA B: normal, con lectura de respuesta
