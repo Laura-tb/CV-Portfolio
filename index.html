@@ -999,40 +999,43 @@
 
   <!-- Script para enviar datos del formulario a Google Sheets -->
   <script>
-    const ENDPOINT = 'https://script.google.com/macros/s/AKfycbxA9WgY10HcdROH-HJitwmfM1EsY4YPJgPGnZQMvXRig6eBsO-3yT76FXo88b4ygLBM8A/exec';
+    (function () {
+      const ENDPOINT = 'https://script.google.com/macros/s/AKfycbxA9WgY10HcdROH-HJitwmfM1EsY4YPJgPGnZQMvXRig6eBsO-3yT76FXo88b4ygLBM8A/exec'; // tu URL /exec
+      const form = document.getElementById('contact_form');
+      if (!form) return;
 
-    const form = document.getElementById('contact_form');
-    const msg = document.getElementById('formMsg');
-    const btn = form.querySelector('.btn-send');
+      // por si quedaban del PHP
+      form.removeAttribute('action');
+      form.removeAttribute('method');
 
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      msg.textContent = 'Enviando...';
-      btn.disabled = true;
+      const msg = document.getElementById('formMsg');
+      const btn = form.querySelector('.btn-send');
 
-      const fd = new FormData(form);
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        msg.textContent = 'Enviando...';
+        btn.disabled = true;
 
-      // Honeypot
-      if (fd.get('company')) return reset('');
+        const fd = new FormData(form);
+        if (fd.get('company')) return reset(''); // honeypot
+        fd.append('source', location.href);
 
-      fd.append('source', location.href);
+        // Opción sencilla (evita CORS): no leemos respuesta
+        await fetch(ENDPOINT, { method: 'POST', body: fd, mode: 'no-cors' });
+        form.reset();
+        reset('Enviado correctamente. ¡Gracias!');
 
-      try {
-        const r = await fetch(ENDPOINT, { method: 'POST', body: new FormData(form) });
-        const raw = await r.text();
-        console.log('Status:', r.status, 'Raw:', raw);
-        const data = JSON.parse(raw);
+        // Si configuraste CORS en Apps Script con tu dominio, usa esto en su lugar:
+        /*
+        const r = await fetch(ENDPOINT, { method: 'POST', body: fd });
+        const data = await r.json();
         if (data.ok) { form.reset(); reset('Enviado correctamente. ¡Gracias!'); }
-      } catch (err) {
-        console.error(err);
-        reset('Error al enviar. Inténtalo de nuevo más tarde.');
-      }
-    });
+        else reset('Error en servidor.');
+        */
+      });
 
-    function reset(text) {
-      msg.textContent = text;
-      btn.disabled = false;
-    }
+      function reset(text) { msg.textContent = text; btn.disabled = false; }
+    })();
   </script>
 </body>
 
