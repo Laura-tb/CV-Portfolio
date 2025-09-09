@@ -999,7 +999,7 @@
 
   <!-- Script para enviar datos del formulario a Google Sheets -->
   <script>
-    const ENDPOINT = 'https://script.google.com/macros/s/AKfycbzno1S7cwkKMsFKligFNIlmAfYKzgSDPxpA6j8HLUy5VeY9X2b4ZgQaQ86DZqqGpu6b3Q/exec';
+    const ENDPOINT = 'https://script.google.com/macros/s/AKfycbwkk21UKB2O0nWKxjn3DGAnW-vKF6nf983twqRH-9QAdvMjPiinsx6yfe53rYFl7IfqIw/exec';
 
     const form = document.getElementById('contact_form');
     const msg = document.getElementById('formMsg');
@@ -1018,16 +1018,13 @@
       fd.append('source', location.href);
 
       try {
-        const r = await fetch(ENDPOINT, { method: 'POST', body: fd });
-        if (!r.ok) throw new Error('HTTP ' + r.status);
-        const data = await r.json();
-
-        if (data.ok) {
-          reset('Enviado correctamente. ¡Gracias!');
-          form.reset();
-        } else {
-          throw new Error(data.error || 'Error desconocido');
-        }
+        const r = await fetch(ENDPOINT, { method: 'POST', body: fd }); // SIN headers
+        const raw = await r.text();                // debug
+        console.log('Status:', r.status, 'Raw:', raw); // debug
+        if (!r.ok) throw new Error(raw);
+        const data = JSON.parse(raw);
+        if (data.ok) { form.reset(); reset('Enviado correctamente. ¡Gracias!'); }
+        else throw new Error(data.error || 'Error');
       } catch (err) {
         console.error(err);
         reset('Error al enviar. Inténtalo de nuevo más tarde.');

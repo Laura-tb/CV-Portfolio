@@ -361,7 +361,7 @@
         scrollTop();
     });
 
-    // Envio formulario por email y/o BD
+    /* Envio formulario por email y/o BD
     const f = document.getElementById('contact_form'), msg = document.getElementById('formMsg');
     if (f) {
         f.addEventListener('submit', async (e) => {
@@ -372,6 +372,6 @@
             msg.textContent = j.ok ? '¡Gracias! Mensaje enviado.' : (j.error || 'Error al enviar');
             if (j.ok) f.reset();
         });
-    }
+    }*/
 
 })(jQuery);
