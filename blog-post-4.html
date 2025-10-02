@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -71,7 +70,8 @@
         <!-- Social Links -->
         <div class="social-links">
           <a href="https://github.com/Laura-tb" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="www.linkedin.com/in/lauratbr" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="www.linkedin.com/in/lauratbr" target="_blank"><i
+              class="fab fa-linkedin"></i></a>
         </div>
         <!-- / Social Links -->
 
@@ -99,29 +99,29 @@
     </div>
     <!-- /Mobile Header -->
 
+
     <!-- Main Content -->
 
 
     <div id="main" class="site-main">
       <div id="main-content" class="single-page-content">
         <div id="primary" class="content-area">
-
           <div class="ajax-page-nav">
+
             <div class="nav-item ajax-page-close-button">
               <a id="ajax-page-close-button" href="index.html#blog"><i class="lnr lnr-cross"></i></a>
             </div>
           </div>
 
           <div class="ajax-page-title">
-            <h2>Automatización de Lista de Espera quirúrgica - Comunidad de Madrid</h2>
+            <h2>Desarrollo con IA</h2>
           </div>
-
-
           <div id="content" class="page-content site-content" role="main">
             <article class="post">
 
+
               <div class="post-thumbnail">
-                <img src="./images/blog/lista_CAM2.JPG" alt="image">
+                <img src="./images/blog/blog_post_1.jpg" alt="image">
               </div>
 
               <div class="post-content">
@@ -129,9 +129,11 @@
                 <header class="entry-header">
                   <!-- Entry meta -->
                   <div class="entry-meta entry-meta-top">
-                    <span><a href="#" rel="category tag">Automatizaciones</a></span>
+                    <span><a href="#" rel="category tag">IA</a></span>
                   </div>
                   <!-- /Entry meta -->
+
+                  <!--<h2 class="entry-title">Desarrollo con IA</h2>-->
                 </header>
                 <!-- /Entry header -->
 
@@ -140,58 +142,8 @@
                   <div class="row">
                     <div class=" col-xs-12 col-sm-12 ">
                       <div class="col-inner">
-
-                        <p>
-                          En este proyecto se aborda la <strong>automatización del proceso de consulta de la lista de
-                            espera quirúrgica de la Comunidad de Madrid</strong>. El objetivo principal es eliminar la
-                          necesidad de realizar comprobaciones manuales, garantizando un seguimiento continuo y
-                          notificaciones automáticas en caso de cambios en la posición del paciente.
-                        </p>
-
-                        <p>
-                          El flujo implementado se basa en un acceso autenticado al portal, utilizando las credenciales
-                          que requiere el sistema: <strong>fecha de nacimiento del paciente</strong> y el <strong>código
-                            proporcionado por el área de Admisión del hospital</strong>. A partir de ahí, el proceso se
-                          gestiona con un script desarrollado en <strong>Python</strong>.
-                        </p>
-
-                        <p>
-                          <strong>Componentes técnicos de la solución:</strong>
-                        <ul style="text-align:justify;">
-                          <li><strong>Login automático</strong>: uso de librerías de Python para realizar la
-                            autenticación en el portal mediante POST requests.</li>
-                          <li><strong>Extracción de datos</strong>: una vez autenticados, el script consulta la posición
-                            actual en la lista de espera quirúrgica y la almacena en memoria.</li>
-                          <li><strong>Persistencia</strong>: los resultados se registran en un archivo
-                            <strong>Excel</strong> mediante la librería <code>openpyxl</code>, lo que permite mantener
-                            un histórico de posiciones.
-                          </li>
-                          <li><strong>Comparación de estados</strong>: en cada ejecución, se comparan los datos
-                            obtenidos con la lectura anterior para identificar variaciones en el número de puesto.</li>
-                          <li><strong>Notificaciones</strong>: si se detecta una modificación, se genera un
-                            <strong>correo electrónico automático</strong> utilizando <code>smtplib</code> informando
-                            del cambio.
-                          </li>
-                          <li><strong>Automatización de ejecución</strong>: el proceso se programa mediante el
-                            <strong>Programador de Tareas de Windows</strong>, que ejecuta el script con la periodicidad
-                            definida.
-                          </li>
-                        </ul>
-                        </p>
-
-                        <p>
-                          De esta forma, se consigue una <strong>automatización completa del ciclo de consulta,
-                            almacenamiento y notificación</strong>, liberando al paciente o al familiar de la necesidad
-                          de revisar manualmente el portal. Además, el enfoque modular permite extender la solución, por
-                          ejemplo, integrándola con sistemas de mensajería instantánea (Telegram, Teams, Slack) o
-                          dashboards de monitorización en tiempo real.
-                        </p>
-
-                        <p>
-                          Este caso práctico demuestra cómo, con un stack muy básico (<strong>Python + Excel + SMTP +
-                            Programador de Tareas</strong>), es posible construir una solución de <strong>automatización
-                            eficiente y escalable</strong> para un proceso administrativo real.
-                        </p>
+                        <p><strong>EN CONSTRUCCIÓN
+                          </strong></p>
 
                       </div>
                     </div>
@@ -203,7 +155,7 @@
                   <div class="date-author">
                     <span class="entry-date">
                       <a href="#" rel="bookmark">
-                        <i class="far fa-clock"></i> <span class="entry-date"> Junio 2025</span>
+                        <i class="far fa-clock"></i> <span class="entry-date"> Sept 2025</span>
                       </a>
                     </span>
                     <span class="author vcard">
@@ -217,9 +169,8 @@
 
             <nav class="navigation post-navigation clearfix">
               <div class="nav-links">
-                <a href="blog-post-2.html" rel="prev"><span class="meta-nav"> Iniciándome en programación SAP
-                    ABAP</span></a>
-                <a href="blog-post-4.html" rel="next"><span class="meta-nav">Desarrollo con IA</span></a>
+                <a href="#" rel="prev"><span class="meta-nav"> Titulo blog previo</span></a>
+                <a href="blog-post-3.html" rel="next"><span class="meta-nav"> Desarrollo de GPTs para responsables de calidad</span></a>
               </div>
             </nav><!-- .navigation -->
 
