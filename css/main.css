@@ -187,7 +187,7 @@ img {
   visibility: visible;
 }
 
-/* Form controls */
+/* Form controls 
 .form-group {
   position: relative;
   margin: 0 0 21.5px;
@@ -252,9 +252,9 @@ textarea.form-control:focus {
 
 .has-error .form-control+.form-control-border {
   background: #ff4c4c;
-}
+}*/
 
-/* Placeholders */
+/* Placeholders 
 .form-control::-moz-placeholder {
   color: #adadac;
 }
@@ -265,9 +265,9 @@ textarea.form-control:focus {
 
 .form-control::-webkit-input-placeholder {
   color: #adadac;
-}
+}*/
 
-/* /Placeholders */
+/* /Placeholders 
 
 .form-group .help-block {
   position: absolute;
@@ -345,7 +345,7 @@ textarea.form-control:focus {
 
 .form-group.form-group-with-icon.form-group-w-checkbox .help-block {
   left: 52px;
-}
+}*/
 
 /* /Form controls */
 
@@ -1880,12 +1880,12 @@ audio {
 
 /* /Contact info */
 
-/* Contact form */
+/* Contact form 
 .g-recaptcha {
   margin-bottom: 20px;
-}
+}*/
 
-/* Two Columns Form */
+/* Two Columns Form 
 .controls.two-columns .left-column {
   width: 47%;
   float: left;
@@ -1900,20 +1900,13 @@ audio {
 /* /Two Columns Form */
 /* / Contact form */
 
-/* Google Map */
-.map {
-  width: 100%;
-  height: 150px;
-  margin: 0 0 30px;
-}
 
-/* / Google Map */
 
 
 /* ============================================================================= 
 8. Sliders
 ============================================================================= */
-/* Testimonials & Clients Carousel */
+/* Testimonials & Clients Carousel 
 .testimonials {
   width: 100%;
 }
