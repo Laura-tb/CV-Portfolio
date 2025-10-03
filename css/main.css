@@ -679,7 +679,10 @@ blockquote {
 }
 
 .section-inner.start-page-full-width .inner-content .fill-block {
-  background-image: url('../images/photoBN.jpg');
+  background-image: image-set(
+    url('../images/photo1_resized_cover_300x445.jpg') 1x,
+    url('../images/photo1_resized_cover_600x890.jpg') 2x
+    );
 }
 
 .section-inner.start-page-full-width .inner-content .fill-block {
@@ -691,6 +694,21 @@ blockquote {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* Versión mobile */
+@media (max-width: 768px) {
+  .section-inner.start-page-full-width .inner-content .fill-block {
+    width: 100%;       /* o ajusta según tu layout */
+    height: 300px;     /* adaptado al formato mobile */
+    background-image: image-set(
+      url('../images/photo1_resized_cover_400x300.jpg') 1x,
+      url('../images/photo1_resized_cover_800x600.jpg') 2x
+    );
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 
 .section-inner.start-page-full-width .hp-text-block {
   padding: 70px 15%;
@@ -1588,23 +1606,6 @@ h3.comment-reply-title:after {
   color: #0099e5;
   text-align: center;
   line-height: 30px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.portfolio-grid figure .name {
-  display: inline-block;
-  padding: 3px 10px;
-  background-color: #fff;
-  font-size: 16px;
-  top: 15px;
-  left: 15px;
-  max-width: calc(100% - 67px);
-  position: absolute;
-  opacity: 0;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
