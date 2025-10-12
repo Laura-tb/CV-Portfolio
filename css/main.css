@@ -1193,11 +1193,26 @@ h3.comment-reply-title:after {
   font-size: 13px;
   line-height: 1.1em;
   position: relative;
-  float: left;
   margin: 0 0 4px;
 }
 
-.skills-second-style .skill-value {
+.tags-block-skills {
+  margin: 0px 0 0;
+}
+
+.tags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tags>li {
+  display: inline-block;
+}
+
+
+
+/*.skills-second-style .skill-value {
   font-size: 11px;
   line-height: 1.1em;
   position: relative;
@@ -1286,7 +1301,7 @@ h3.comment-reply-title:after {
 
 .skill-percentage.skill-12 {
   width: 80%;
-}
+}*/
 
 /* /Skills */
 
@@ -2042,9 +2057,7 @@ audio {
 
 .tags>li {
   display: inline-block;
-}
 
-.tags a {
   display: inline-block;
   font-size: 12px;
   line-height: 1.5em;
