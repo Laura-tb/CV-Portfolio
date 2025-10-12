@@ -1,10 +1,3 @@
-/*
-* Template Name: Kerge - Resume / CV / vCard Template
-* Author: lmpixels
-* Author URL: http://themeforest.net/user/lmpixels
-* Version: 2.4
-*/
-
 /* =============================================================================
 
 1. Fonts
@@ -15,7 +8,7 @@
 6. Site content
 7. Subpages
   7.1. About Me subpage
-  7.2. Resume subpage
+  7.2. CV subpage
   7.3. Portfolio subpage
   7.4. Blog subpage
   7.5. Contact subpage
@@ -366,67 +359,44 @@ textarea.form-control:focus {
 }
 
 /* buttons */
-/* buttons */
 .btn-primary,
-.btn-secondary,
-button,
-input[type="button"],
-input[type="submit"] {
+button {
   display: inline-block;
   position: relative;
-  padding: 0.8em 2em;
+  padding: 0.75em 1.5em;
   margin-bottom: .25em;
   font-size: 1em;
   line-height: 1.2;
-  border: 0;
-  outline: 0;
-  border: 2px solid #0099e5;
-  color: #222;
+  border: none;
+  color: white;
+  font-weight: 400;
   text-shadow: none;
-  background-color: #fff;
-  border-radius: 0;
+  background-color: #0099e5;
+  border-radius: 0.5em;
   font-family: 'Poppins', Helvetica, sans-serif;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s;
+  justify-content: space-between;
 }
 
 .btn-primary:hover,
-.btn-primary:focus,
-button:hover,
-button:focus,
-input[type="button"]:hover,
-input[type="button"]:focus,
-input[type="submit"]:hover,
-input[type="submit"]:focus {
-  background-color: #0099e5;
-  border-color: #0099e5;
-  color: #fff;
+.btn-primary:focus {
+  background-color: #026a9e;
+  outline: 2px solid #024364;
+  outline-offset: 1px;
+}
+.btn-primary:active {
+  transform: scale(0.90)
 }
 
-.btn-secondary {
-  border-color: #d5d5d5;
-  background-color: #fff;
-}
-
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #222;
-  border-color: #d5d5d5;
-  background-color: #d5d5d5;
+.btn-primary .lnr{
+  font-size: 1em;
+  font-weight: 400;
+  margin-left: 12px;
+  position: relative;
 }
 
 /* / buttons */
 
-.border-top {
-  border-top: 2px solid #0099e5;
-}
-
-.border-bottom {
-  border-bottom: 2px solid #0099e5;
-}
 
 /* Footer */
 body>footer {
@@ -718,7 +688,7 @@ blockquote {
 }
 
 .hp-main-title {
-  font-size: 48px;
+  font-size: 2.5em;
   line-height: 1.2em;
   margin-bottom: 15px;
 }
@@ -836,19 +806,6 @@ blockquote {
   padding-right: 0;
 }
 
-.my-photo {
-  position: relative;
-  margin: 20px auto;
-  max-width: 110px;
-  text-align: center;
-  z-index: 0;
-}
-
-.my-photo img {
-  height: 80px;
-  max-height: 80px;
-  width: 80px;
-}
 
 .site-title-block {
   position: relative;
@@ -1125,124 +1082,11 @@ h3.comment-reply-title:after {
 .info-block-w-icon .ci-text p {
   font-size: .92em;
 }
-
 /* /Services */
-
-/* Testimonials */
-.testimonial-item {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.testimonial-content {
-  padding-left: 50px;
-  width: 100%;
-  height: auto;
-}
-
-.testimonial-content .testimonial-text {
-  padding: 1.4em 1.8em;
-  background-color: #fdfdfd;
-  border-radius: 6px;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border: 1px solid #e5e5e5;
-  width: 100%;
-  position: relative;
-  margin: 0;
-  z-index: -1;
-}
-
-.testimonial-content .testimonial-text p {
-  margin: 0;
-  font-style: italic;
-}
-
-.testimonial-credits {
-  margin-top: 10px;
-  display: block;
-  position: relative;
-}
-
-.testimonial-picture {
-  display: inline-block;
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  overflow: hidden;
-  margin: 0;
-  top: -37px;
-  border-radius: 40px;
-  z-index: 1;
-}
-
-.testimonial-picture img {
-  width: 100%;
-  border-radius: 100%;
-  -moz-border-radius: 100%;
-  -webkit-border-radius: 100%;
-  border: 2px solid #e5e5e5;
-}
-
-.testimonial-author-info {
-  display: inline-block;
-  position: relative;
-  padding-left: 92px;
-}
-
-.testimonial-author,
-.info-list li .title {
-  font-family: Poppins, Helvetica, sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  color: #333333;
-}
-
-.testimonial-author {
-  display: inline-block;
-  font-size: 1.07em;
-  color: #222;
-  margin: 0;
-  font-weight: 600;
-  text-align: center;
-}
-
-.testimonial-firm {
-  font-size: 11px;
-  line-height: 1.3em;
-  margin: 0;
-  font-weight: 400;
-  color: #aaa;
-}
-
-/* /Testimonials */
-
-
-
-.testimonials.owl-carousel .owl-nav .owl-prev,
-.testimonials.owl-carousel .owl-nav .owl-next,
-.clients.owl-carousel .owl-nav .owl-prev,
-.clients.owl-carousel .owl-nav .owl-next {
-  display: inline-block;
-  background-color: #fff;
-  border: 1px solid #e5e5e5;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-}
-
-.testimonials.owl-carousel .owl-nav .owl-prev:hover,
-.testimonials.owl-carousel .owl-nav .owl-next:hover,
-.clients.owl-carousel .owl-nav .owl-prev:hover,
-.clients.owl-carousel .owl-nav .owl-next:hover {
-  color: #fff;
-  background-color: #0099e5;
-  border-color: #0099e5;
-}
-
 
 
 /* =======================================
-7.2. Resume subpage
+7.2. CV subpage
 ======================================= */
 .timeline-second-style .timeline-item {
   position: relative;
@@ -1827,9 +1671,7 @@ audio {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* centra horizontal */
   margin: 2rem 0;
-  /* separa del resto de contenido */
 }
 
 .video-wrapper p {
@@ -1906,82 +1748,6 @@ audio {
 /* ============================================================================= 
 8. Sliders
 ============================================================================= */
-/* Testimonials & Clients Carousel 
-.testimonials {
-  width: 100%;
-}
-
-.testimonials.owl-carousel .owl-nav,
-.clients.owl-carousel .owl-nav {
-  position: absolute;
-  text-align: right;
-  right: 0;
-  bottom: 5px;
-}
-
-.testimonials.owl-carousel .owl-nav .owl-prev,
-.clients.owl-carousel .owl-nav .owl-prev {
-  margin-right: 3px;
-}
-
-.testimonials.owl-carousel .owl-nav .owl-prev,
-.testimonials.owl-carousel .owl-nav .owl-next,
-.clients.owl-carousel .owl-nav .owl-prev,
-.clients.owl-carousel .owl-nav .owl-next {
-  position: relative;
-  display: inline-block;
-  background-color: #fff;
-  border: 1px solid #e5e5e5;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  font-family: "Font Awesome 5 Free";
-  font-size: 11px;
-  font-weight: 900;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  color: #666;
-}
-
-.testimonials.owl-carousel .owl-nav .owl-prev:hover,
-.testimonials.owl-carousel .owl-nav .owl-next:hover,
-.clients.owl-carousel .owl-nav .owl-prev:hover,
-.clients.owl-carousel .owl-nav .owl-next:hover {
-  background-color: #0099e5;
-  border-color: #0099e5;
-  color: #fff;
-}
-
-.testimonials.owl-carousel .owl-nav .owl-prev:before,
-.testimonials.owl-carousel .owl-nav .owl-next:before,
-.clients.owl-carousel .owl-nav .owl-prev:before,
-.clients.owl-carousel .owl-nav .owl-next:before {
-  position: relative;
-  margin: 2px;
-  width: 22px;
-  height: 22px;
-  line-height: 22px;
-  text-align: center;
-  display: block;
-  cursor: pointer;
-  color: inherit;
-  z-index: 1;
-}
-
-.testimonials.owl-carousel .owl-nav .owl-prev:before,
-.clients.owl-carousel .owl-nav .owl-prev:before {
-  content: "\f053";
-}
-
-.testimonials.owl-carousel .owl-nav .owl-next:before,
-.clients.owl-carousel .owl-nav .owl-next:before {
-  content: "\f054";
-}
-
-/* /Testimonials & Clients Carousel */
 
 /* Portfolio Carousel */
 .portfolio-page-carousel {
@@ -2896,31 +2662,6 @@ blockquote p {
     z-index: 1002;
   }
 
-  .mobile-logo-container {
-    margin: 0 20px;
-    text-align: left;
-  }
-
-  .mobile-header-image {
-    display: inline-block;
-    float: left;
-  }
-
-  .mobile-header-image img {
-    max-height: 34px;
-    margin: 8px 8px 8px 0;
-  }
-
-  .mobile-site-title {
-    display: inline-block;
-    float: left;
-    color: #222;
-    font-size: 18px;
-    font-weight: 600;
-    font-family: Poppins, Helvetica, sans-serif;
-    margin: 0;
-    line-height: 50px;
-  }
 
   .mobile-site-title a,
   .mobile-site-title a:focus,
@@ -3121,7 +2862,7 @@ blockquote p {
   }
 
   .hp-main-title {
-    font-size: 36px;
+    font-size: 2em;
   }
 
   .portfolio-grid figure {
@@ -3345,7 +3086,6 @@ blockquote p {
 /* ============================================================================= 
 12. Updates
 ============================================================================= */
-/* v2.0 - 17 September 2018 */
 .pt-page.start-page {
   display: table;
   table-layout: fixed;
@@ -3356,7 +3096,7 @@ blockquote p {
 
 .start-page .section-inner {
   background-color: transparent;
-  background-image: url(../images/kerge_start_page_1.jpg);
+  background-image: url();
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-attachment: fixed;
@@ -3409,14 +3149,6 @@ blockquote p {
   background-color: #fafafa;
 }
 
-.lm-info-block .lm-info-block-value {
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 400;
-  display: block;
-  margin: 10px 0;
-  color: #0099e5;
-}
 
 .lmpixels-scroll-to-top {
   position: fixed;
@@ -3505,17 +3237,11 @@ blockquote p {
   }
 }
 
-/* /v2.0 - 17 September 2018 */
-
-/* v2.1 - 28 September 2018 */
 .section-inner.start-page-full-width .hp-text-block .sp-subtitle {
   color: #888;
   font-weight: 300;
 }
 
-/* /v2.1 - 28 September 2018 */
-
-/* v2.2 - 26 October 2018 */
 /* Header Copyrights */
 .header .copyrights {
   width: 100%;
@@ -3531,9 +3257,6 @@ blockquote p {
 }
 
 /* /Header Copyrights */
-/* /v2.2 - 26 October 2018 */
-
-/* V2.4 - 03 July 2019 */
 body {
   overflow: auto;
 }
@@ -3576,18 +3299,20 @@ body {
   margin-bottom: 0;
 }
 
-/* /V2.4 - 03 July 2019 */
 
 /* Certificates */
 .certificate-item {
   position: relative;
-  display: table;
-  table-layout: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
   width: 100%;
+  height: 100%;
+  min-height: 150px;
   border: 2px solid #e5e5e5;
   border-radius: 8px;
-  margin-bottom: 20px;
-  -webkit-transition: all 2s ease-in-out;
+  margin-bottom: 0;
+  -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
   -ms-transition: all .2s ease-in-out;
@@ -3606,12 +3331,12 @@ body {
 }
 
 .certi-logo {
-  display: table-cell;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 120px;
-  height: 100%;
   background-color: #f5f5f5;
   padding: 25px;
-  vertical-align: middle;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
 }
@@ -3619,17 +3344,20 @@ body {
 .certi-logo img {
   display: block;
   max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .certi-content {
-  display: table-cell;
-  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
   padding: 20px 25px;
-  vertical-align: middle;
 }
 
 .certi-title h4 {
-  font-size: 16px;
+  font-size: 14px;
   margin: 0 0 5px;
 }
 
@@ -3645,3 +3373,30 @@ body {
 }
 
 /* /Certificates */
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .certificates-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.certificates-grid > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+  float: none;
+  padding: 0;
+  width: 100%;
+}
+
+.certificates-grid > [class*='col-'] > * {
+  display: flex;
+  flex: 1;
+  width: 100%;
+}

@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Portfolio Laura Trillo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <meta name="description" content="Portfolio Laura Trillo" />
+  <meta name="description"
+    content="Conoce el portfolio de Laura, desarrolladora de aplicaciones web, SAP ABAP, automatizaciones y manejo de IA. Proyectos, experiencia profesional y contacto." />
   <meta name="keywords" content="vcard, responsive, retina, resume, jquery, css3, bootstrap, Material CV, portfolio" />
   <meta name="author" content="lmpixels" />
   <link rel="shortcut icon" href="favicon_laptop.png">
@@ -32,16 +33,9 @@
   <!-- /Loading animation -->
 
   <div id="page" class="page one-page-style">
-    <!-- Header -->
+    <!-- Header lateral -->
     <header id="site_header" class="header mobile-menu-hide">
       <div class="header-content clearfix">
-        <div class="my-photo">
-
-        </div>
-
-        <div class="site-title-block">
-          <div class="site-title"></div>
-        </div>
 
         <!-- Navigation -->
         <div class="site-nav">
@@ -51,7 +45,7 @@
               <a class="pt-trigger" href="#about-me">Sobre mí</a> <!-- href value = data-id without # of .pt-page. -->
             </li>
             <li>
-              <a class="pt-trigger" href="#resume">CV</a>
+              <a class="pt-trigger" href="#CV">CV</a>
             </li>
             <li>
               <a class="pt-trigger" href="#portfolio">Portfolio</a>
@@ -79,19 +73,10 @@
         <!-- / Copyrights -->
       </div>
     </header>
-    <!-- /Header -->
+    <!-- /Header lateral -->
 
     <!-- Mobile Header -->
     <div class="mobile-header mobile-visible">
-      <div class="mobile-logo-container">
-        <div class="mobile-header-image">
-          <a href="#">
-
-          </a>
-        </div>
-        <div class="mobile-site-title"><a href="#"></a></div>
-      </div>
-
       <a class="menu-toggle mobile-visible">
         <i class="fa fa-bars"></i>
       </a>
@@ -109,7 +94,7 @@
         <!-- Subpages -->
         <div class="subpages">
 
-          <!-- Home Subpage -->
+          <!-- About Me subpage -->
           <section class="pt-page" id="about-me">
             <div class="section-inner start-page-full-width">
               <div class="start-page-full-width">
@@ -140,7 +125,11 @@
                           problemas y adaptación, junto con una fuerte orientación al aprendizaje continuo y a la mejora
                           constante. </p>
                         <div class="hp-buttons">
-                          <a href="./CV_Laura_Trillo_v1.pdf" target="_blank" class="btn btn-primary">Descargar CV</a>
+                          <a href="./CV_Laura_Trillo_v1.pdf" target="_blank">
+                            <button class="btn btn-primary">Descargar CV
+                              <i class="lnr lnr-download"></i>
+                            </button>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -235,10 +224,10 @@
               </div>
             </div>
           </section>
-          <!-- End of Home Subpage -->
+          <!-- End of About Me subpage -->
 
-          <!-- Resume Subpage -->
-          <section class="pt-page" id="resume">
+          <!-- CV Subpage -->
+          <section class="pt-page" id="CV">
             <div class="section-inner custom-page-content">
               <div class="section-title-block second-style">
                 <h2 class="section-title">CV</h2>
@@ -365,6 +354,7 @@
                     </div>
                   </div>
 
+                  <!-- Skills -->
                   <div class="col-xs-12 col-sm-4">
                     <div class="col-inner">
 
@@ -504,6 +494,7 @@
                       </div>
                     </div>
                   </div>
+                  <!-- End of Skills -->
                 </div>
 
                 <!--Certificates -->
@@ -517,35 +508,35 @@
                   </div>
                 </div>
 
-                <div class="row">
-                  <div class=" col-xs-12 col-sm-6 ">
+                <div class="row certificates-grid">
+                  <div class=" col-xs-12 col-sm-12 ">
                     <!--<a href="#" class="lightbox">-->
-                      <div class="certificate-item clearfix">
-                        <div class="certi-logo">
-                          <img src="./images/certificates/logo-jscamp.PNG" alt="logo">
+                    <div class="certificate-item clearfix">
+                      <div class="certi-logo">
+                        <img src="./images/certificates/logo-jscamp.PNG" alt="logo">
+                      </div>
+
+                      <div class="certi-content">
+                        <div class="certi-title">
+                          <h4>Bootcamp Full-Stack</h4>
                         </div>
 
-                        <div class="certi-content">
-                          <div class="certi-title">
-                            <h4>Bootcamp Full-Stack</h4>
-                          </div>
+                        <div class="certi-id">
+                          <span>Infojobs / Midudev</span>
+                        </div>
+                        <div class="certi-date">
+                          <span>Oct 2025</span>
+                        </div>
 
-                          <div class="certi-id">
-                            <span>Infojobs / Midudev</span>
-                          </div>
-                          <div class="certi-date">
-                            <span>Oct 2025</span>
-                          </div>
-
-                          <div class="certi-company">
-                            <span></span>
-                          </div>
+                        <div class="certi-company">
+                          <span></span>
                         </div>
                       </div>
+                    </div>
                     </a>
                   </div>
 
-                  <div class=" col-xs-12 col-sm-6 ">
+                  <div class=" col-xs-12 col-sm-12 ">
                     <a href="./images/certificates/big_title.PNG" class="lightbox">
                       <div class="certificate-item clearfix">
                         <div class="certi-logo">
@@ -572,7 +563,7 @@
                     </a>
                   </div>
 
-                  <div class=" col-xs-12 col-sm-6 ">
+                  <div class=" col-xs-12 col-sm-12 ">
                     <a href="#" class="lightbox">
                       <div class="certificate-item clearfix">
                         <div class="certi-logo">
@@ -599,7 +590,7 @@
                     </a>
                   </div>
 
-                  <div class=" col-xs-12 col-sm-6 ">
+                  <div class=" col-xs-12 col-sm-12 ">
                     <a href="./images/certificates/php_title.JPG" class="lightbox">
                       <div class="certificate-item clearfix">
                         <div class="certi-logo">
@@ -628,7 +619,7 @@
                   </div>
 
 
-                  <div class=" col-xs-12 col-sm-6 ">
+                  <div class=" col-xs-12 col-sm-12 ">
                     <a href="./images/certificates/prompt_title.jpeg" class="lightbox">
                       <div class="certificate-item clearfix">
                         <div class="certi-logo">
@@ -655,7 +646,7 @@
                     </a>
                   </div>
 
-                  <div class=" col-xs-12 col-sm-6 ">
+                  <div class=" col-xs-12 col-sm-12 ">
                     <a href="./images/certificates/git_title.JPG" class="lightbox">
                       <div class="certificate-item clearfix">
                         <div class="certi-logo">
@@ -682,7 +673,7 @@
                     </a>
                   </div>
 
-                  <div class=" col-xs-12 col-sm-6 ">
+                  <div class=" col-xs-12 col-sm-12 ">
                     <a href="./images/certificates/google_title.JPG" class="lightbox"
                       data-title="SAP Certified Associate ABAP Cloud (Sept 2025)">
 
@@ -693,7 +684,7 @@
 
                         <div class="certi-content">
                           <div class="certi-title">
-                            <h4>Google Digital Marketing and E-Commerce Professional Certificate</h4>
+                            <h4>Google Digital Marketing and E-Commerce</h4>
                           </div>
 
                           <div class="certi-id">
@@ -711,7 +702,7 @@
                     </a>
                   </div>
 
-                  <div class=" col-xs-12 col-sm-6 ">
+                  <div class=" col-xs-12 col-sm-12 ">
                     <a href="./images/certificates/aws_title.png" class="lightbox" data-title="AWS Cloud Practitioner">
                       <div class="certificate-item clearfix">
                         <div class="certi-logo">
@@ -743,7 +734,7 @@
               </div>
             </div>
           </section>
-          <!-- End of Resume Subpage -->
+          <!-- End of CV Subpage -->
 
 
           <!-- Portfolio Subpage -->
@@ -770,7 +761,7 @@
                           </div>
 
                           <!--<i class="far fa-file-alt"></i>--> <!--Icono portfolio-->
-                          <i class="fas fa-info-circle" title="Más información" aria-label="Más información"></i>                          
+                          <i class="fas fa-info-circle" title="Más información" aria-label="Más información"></i>
                         </figure>
 
                         <figure class="item standard" data-groups='["category_all", "category_media"]'>
@@ -779,7 +770,7 @@
                             <a href="portfolio-4.html" class="ajax-page-load"></a>
                           </div>
 
-                          <i class="fas fa-info-circle" title="Más información" aria-label="Más información"></i>                          
+                          <i class="fas fa-info-circle" title="Más información" aria-label="Más información"></i>
                         </figure>
 
                         <figure class="item standard" data-groups='["category_all", "category_media"]'>
@@ -789,7 +780,7 @@
                             <a href="portfolio-3.html" class="ajax-page-load"></a>
                           </div>
 
-                          <i class="fas fa-info-circle" title="Más información" aria-label="Más información"></i>                          
+                          <i class="fas fa-info-circle" title="Más información" aria-label="Más información"></i>
                         </figure>
 
                         <figure class="item standard" data-groups='["category_all", "category_media"]'>
@@ -799,7 +790,7 @@
                             <a href="portfolio-2.html" class="ajax-page-load"></a>
                           </div>
 
-                          <i class="fas fa-info-circle" title="Más información" aria-label="Más información"></i>                          
+                          <i class="fas fa-info-circle" title="Más información" aria-label="Más información"></i>
                         </figure>
 
                         <figure class="item standard" data-groups='["category_all", "category_media"]'>
@@ -808,7 +799,7 @@
                             <a href="portfolio-1.html" class="ajax-page-load"></a>
                           </div>
 
-                          <i class="fas fa-info-circle" title="Más información" aria-label="Más información"></i>                          
+                          <i class="fas fa-info-circle" title="Más información" aria-label="Más información"></i>
                         </figure>
 
                         <!--<figure class="item standard" data-groups='["category_all", "category_media"]'>
@@ -829,14 +820,13 @@
               </div>
             </div>
           </section>
-          <!-- /Portfolio Subpage -->
+          <!-- End of Portfolio Subpage -->
 
           <!-- Blog Subpage -->
           <section class="pt-page" id="blog">
             <div class="section-inner custom-page-content">
               <div class="section-title-block second-style">
                 <h2 class="section-title">Blog</h2>
-                <h5 class="section-description"></h5>
               </div>
 
               <div class="section-content">
@@ -943,14 +933,13 @@
               </div>
             </div>
           </section>
-          <!-- /Blog Subpage -->
+          <!-- End of Blog Subpage -->
 
           <!-- Contact Subpage -->
           <section class="pt-page" id="contact">
             <div class="section-inner custom-page-content">
               <div class="section-title-block second-style">
-                <h2 class="section-title">Contacto</h2>
-                <h5 class="section-description"></h5>
+                <h2 class="section-title">Contacto</h2>                
               </div>
 
               <div class="section-content">
@@ -961,9 +950,7 @@
                     <div class="col-inner bs-30">
                       <div class="lm-info-block gray-default">
                         <i class="lnr lnr-phone-handset"></i>
-                        <h4>678 39 41 33</h4>
-                        <span class="lm-info-block-value"></span>
-                        <span class="lm-info-block-text"></span>
+                        <h4>678 39 41 33</h4>                      
                       </div>
                     </div>
                   </div>
@@ -973,8 +960,6 @@
                       <div class="lm-info-block gray-default">
                         <i class="lnr lnr-map-marker"></i>
                         <h4>Madrid</h4>
-                        <span class="lm-info-block-value"></span>
-                        <span class="lm-info-block-text"></span>
                       </div>
                     </div>
                   </div>
@@ -984,8 +969,6 @@
                       <div class="lm-info-block gray-default">
                         <i class="lnr lnr-envelope"></i>
                         <h4>lauratrillo1990@gmail.com</h4>
-                        <span class="lm-info-block-value"></span>
-                        <span class="lm-info-block-text"></span>
                       </div>
                     </div>
                   </div>
@@ -1056,7 +1039,7 @@
               </div>
             </div>
           </section>
-          <!-- End Contact Subpage -->
+          <!-- End of Contact Subpage -->
 
         </div>
       </div>
