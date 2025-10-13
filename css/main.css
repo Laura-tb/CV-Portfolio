@@ -1430,6 +1430,12 @@ h3.comment-reply-title:after {
   opacity: 1;
 }
 
+/* Tags Portfolio */
+.tags-block {
+  margin: 15px 5px 15px;
+}
+/* Tags Portfolio */
+
 
 /* =======================================
 7.4. Blog subpage
@@ -1958,38 +1964,7 @@ audio {
   line-height: 26px;
 }
 
-/* Tags Portfolio */
-.tags-block {
-  margin: 15px 5px 15px;
-}
 
-.tags {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.tags>li {
-  display: inline-block;
-}
-
-.tags a {
-  display: inline-block;
-  font-size: 12px;
-  line-height: 1.5em;
-  color: var(--color-text);
-  padding: 2px 7px;
-  background-color: #fff;
-  border-radius: 3px;
-  border: 1px solid var(--color-border);
-  margin: 3px 2px 2px;
-}
-
-.tags a:first-child {
-  margin-left: 0;
-}
-
-/* /Tags Block */
 
 /* ============================================================================= 
 10. Single Page Layout (Blog Post page ...)
