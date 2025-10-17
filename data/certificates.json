@@ -1,0 +1,82 @@
+[
+    {
+        "id": "bootcamp-full-stack-2025-10",
+        "logo": "./images/certificates/logo-jscamp.PNG",
+        "title": "Bootcamp Full-Stack",
+        "company": "Infojobs / Midudev",
+        "date": "Octubre 2025",
+        "date_iso": "2025-10-02",
+        "proof":"#",
+        "lightboxTitle":"Bootcamp Full-Stack"
+    },
+    {
+        "id": "desarrollo-con-ia-2025-10",
+        "logo": "./images/certificates/logo-bigschool.webp",
+        "title": "Desarrollo con IA",
+        "company": "Big School",
+        "date": "Octubre 2025",
+        "date_iso": "2025-10-01",
+        "proof":"./images/certificates/big_title.PNG",
+        "lightboxTitle":"Desarrollo con IA"},
+    {
+        "id": "sap-abap-cloud-2025-09",
+        "logo": "./images/certificates/logo-sap.png",
+        "title": "SAP Certified Associate Back End Developer ABAP Cloud",
+        "company": "SAP",
+        "date": "Septiembre 2025",
+        "date_iso": "2025-09-01",
+        "proof":"./images/certificates/abap_title1.PNG",
+        "proof2":"./images/certificates/abap_title2.PNG",
+        "lightboxTitle":"SAP Certified Associate Back End Developer ABAP Cloud"
+    },
+    {
+        "id": "php-fundamentos-2025-08",
+        "logo": "./images/certificates/logo-php.png",
+        "title": "PHP: Fundamentos",
+        "company": "OpenWebinars",
+        "date": "Agosto 2025",
+        "date_iso": "2025-08-01",
+        "proof":"./images/certificates/php_title.JPG",
+        "lightboxTitle":"PHP: Fundamentos"
+    },
+    {
+        "id": "prompt-engineering-2025-07",
+        "logo": "./images/certificates/logo-linkedinlearning.png",
+        "title": "Prompt Engineering",
+        "company": "LinkedIn Learning",
+        "date": "Julio 2025",
+        "date_iso": "2025-07-01",
+        "proof":"./images/certificates/prompt_title.jpeg",
+        "lightboxTitle":"Prompt Engineering"
+    },
+    {
+        "id": "git-2025-06",
+        "logo": "./images/certificates/logo-git.png",
+        "title": "Curso de Git",
+        "company": "OpenWebinars",
+        "date": "Junio 2025",
+        "date_iso": "2025-06-02",
+        "proof":"./images/certificates/git_title.JPG",
+        "lightboxTitle":"Curso de Git"
+    },
+    {
+        "id": "google-digital-marketing-2025-06",
+        "logo": "./images/certificates/logo-google.png",
+        "title": "Google Digital Marketing and E-Commerce",
+        "company": "Coursera",
+        "date": "Junio 2025",
+        "date_iso": "2025-06-01",
+        "proof":"./images/certificates/google_title.JPG",
+        "lightboxTitle":"Google Digital Marketing and E-Commerce"
+    },
+    {
+        "id": "aws-cloud-practitioner-2025-01",
+        "logo": "./images/certificates/logo-aws.png",
+        "title": "AWS Cloud Quest: Cloud Practitioner",
+        "company": "Amazon Web Services",
+        "date": "Enero 2025",
+        "date_iso": "2025-01-01", 
+        "proof": "./images/certificates/aws_title.png",
+        "lightboxTitle": "AWS Cloud Practitioner"
+    }
+]
