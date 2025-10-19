@@ -1817,6 +1817,11 @@ audio {
 
 /* Portfolio Carousel */
 
+.video-wrapper-portfolio video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
 
 /* ============================================================================= 
 9. Portfolio Full info page
@@ -1883,13 +1888,14 @@ audio {
   text-align: left;
 }
 
-.ajax-page-title h1 {
+.ajax-page-title h2 {
   display: inline-block;
   margin: 0;
+  line-height: 1.2em;
 }
 
 .portfolio-block {
-  padding-top: 30px;
+  padding-top: 0px;
 }
 
 .ajax-page-page-content img {
@@ -1933,6 +1939,7 @@ audio {
 
 .project-general-info p {
   margin: 0;
+  text-align: left;
 }
 
 .share-buttons {
@@ -2366,7 +2373,7 @@ blockquote p {
   color: #fff;
   display: inline-flex;
   align-items: center;
-  gap:0.2em;
+  gap: 0.2em;
   padding: 0.4em 0.8em;
   font-size: 14px;
   font-weight: 400;
@@ -2392,9 +2399,9 @@ blockquote p {
   color: var(--color-primary);
 }
 
-.meta-nav svg{
+.meta-nav svg {
   align-items: center;
-  
+
 }
 
 /* Posts Navigation & Comments */
@@ -2503,6 +2510,9 @@ blockquote p {
   .site-main {
     margin-left: 160px;
   }
+
+
+
 }
 
 @media only screen and (max-width: 991px) {
@@ -2791,6 +2801,13 @@ blockquote p {
     height: calc(100% - 50px);
     min-height: calc(100% - 50px);
   }
+
+  .video-wrapper video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -2941,6 +2958,13 @@ blockquote p {
     margin: 0 0 5px;
     display: block;
   }
+
+  .video-wrapper video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -3021,6 +3045,13 @@ blockquote p {
     padding-left: 25px;
     padding-right: 0;
   }
+
+  .video-wrapper video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
 }
 
 
