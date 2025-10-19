@@ -404,11 +404,12 @@ button {
   outline: 2px solid var(--color-primary-darker);
   outline-offset: 1px;
 }
+
 .btn-primary:active {
   transform: scale(0.90)
 }
 
-.btn-primary .lnr{
+.btn-primary .lnr {
   font-size: 1em;
   font-weight: 400;
   margin-left: 12px;
@@ -669,10 +670,8 @@ blockquote {
 }
 
 .section-inner.start-page-full-width .inner-content .fill-block {
-  background-image: image-set(
-    url('../images/photo1_resized_cover_300x445.jpg') 1x,
-    url('../images/photo1_resized_cover_600x890.jpg') 2x
-    );
+  background-image: image-set(url('../images/photo1_resized_cover_300x445.jpg') 1x,
+      url('../images/photo1_resized_cover_600x890.jpg') 2x);
 }
 
 .section-inner.start-page-full-width .inner-content .fill-block {
@@ -688,12 +687,12 @@ blockquote {
 /* Versión mobile */
 @media (max-width: 768px) {
   .section-inner.start-page-full-width .inner-content .fill-block {
-    width: 100%;       /* o ajusta según tu layout */
-    height: 300px;     /* adaptado al formato mobile */
-    background-image: image-set(
-      url('../images/photo1_resized_cover_400x300.jpg') 1x,
-      url('../images/photo1_resized_cover_800x600.jpg') 2x
-    );
+    width: 100%;
+    /* o ajusta según tu layout */
+    height: 300px;
+    /* adaptado al formato mobile */
+    background-image: image-set(url('../images/photo1_resized_cover_400x300.jpg') 1x,
+        url('../images/photo1_resized_cover_800x600.jpg') 2x);
     background-size: cover;
     background-position: center;
   }
@@ -1102,6 +1101,7 @@ h3.comment-reply-title:after {
 .info-block-w-icon .ci-text p {
   font-size: .92em;
 }
+
 /* /Services */
 
 
@@ -1196,6 +1196,7 @@ h3.comment-reply-title:after {
 .card-body .item-title {
   color: var(--color-primary-dark)
 }
+
 /* /Skills */
 
 /*Tags*/
@@ -1204,21 +1205,23 @@ h3.comment-reply-title:after {
   font-weight: 400;
   line-height: 2;
 }
+
 .cont_badge {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .badge-primary {
-    color: #fff;
-    background-color: var(--color-primary);
-    margin: 0.5em;
+  color: #fff;
+  background-color: var(--color-primary);
+  margin: 0.5em;
 }
 
 .badge-secondary {
-    color: #fff;
-    background-color: var(--color-muted);
-    margin: 0.5em;
+  color: #fff;
+  background-color: var(--color-muted);
+  margin: 0.5em;
 }
+
 /*Tags*/
 
 
@@ -1437,6 +1440,7 @@ h3.comment-reply-title:after {
 .tags-block {
   margin: 15px 5px 15px;
 }
+
 /* Tags Portfolio */
 
 
@@ -1623,8 +1627,9 @@ h3.comment-reply-title:after {
 }
 
 audio {
-  width: 70%;
-  margin: 1rem 0;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
 }
 
 .video-wrapper {
@@ -1639,7 +1644,7 @@ audio {
 }
 
 .video-wrapper video {
-  width: 70%;
+  width: 80%;
   height: auto;
   border-radius: 8px;
 }
@@ -1874,8 +1879,7 @@ audio {
 }
 
 .ajax-page-title {
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding: 20px 20px 20px 20px;
   text-align: left;
 }
 
@@ -2004,7 +2008,7 @@ audio {
 
 .single-page-content .post-content {
   position: relative;
-  margin-top: -70px;
+  margin-top: 15px;
   margin-left: 40px;
   margin-right: 40px;
   padding-left: 30px;
@@ -2359,10 +2363,13 @@ blockquote p {
 }
 
 .post-navigation .meta-nav {
-  color: #aaa;
-  display: block;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap:0.2em;
+  padding: 0.4em 0.8em;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -2383,6 +2390,11 @@ blockquote p {
 .post-navigation a:hover,
 .image-navigation a:hover {
   color: var(--color-primary);
+}
+
+.meta-nav svg{
+  align-items: center;
+  
 }
 
 /* Posts Navigation & Comments */
@@ -2987,7 +2999,7 @@ blockquote p {
   }
 
   .timeline-second-style .timeline-item {
-       position: relative;
+    position: relative;
     display: block;
   }
 
@@ -3316,7 +3328,7 @@ body {
   }
 }
 
-.certificates-grid > [class*='col-'] {
+.certificates-grid>[class*='col-'] {
   display: flex;
   flex-direction: column;
   float: none;
@@ -3324,9 +3336,8 @@ body {
   width: 100%;
 }
 
-.certificates-grid > [class*='col-'] > * {
+.certificates-grid>[class*='col-']>* {
   display: flex;
   flex: 1;
   width: 100%;
 }
-

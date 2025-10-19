@@ -106,6 +106,7 @@
                 hideContent();
                 location.hash = location.hash.split('/')[0];
             })
+            
             .on("click", ".ajax-page-load", function () { // Show Ajax Loaded Page
                 var hash = location.hash.split('/')[0] + '/' + $(this).attr('href').substr(0, $(this).attr('href').length - 5);
                 location.hash = hash;
@@ -362,4 +363,4 @@
     }*/
 
 
-    })(jQuery);
+})(jQuery);
