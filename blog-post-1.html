@@ -141,7 +141,7 @@
             <article class="post">
 
               <div class="post-thumbnail">
-                <img src="./images/blog/lista_CAM2.JPG" alt="image">
+                <img src="./images/blog/lista_espera_1344x484.png" alt="image">
               </div>
 
               <div class="post-content">
@@ -179,7 +179,11 @@
                           <strong>Componentes técnicos de la solución:</strong>
                         <ul style="text-align:justify;">
                           <li><strong>Login automático</strong>: uso de librerías de Python para realizar la
-                            autenticación en el portal mediante POST requests.</li>
+                            autenticación en el portal mediante POST requests.
+                            <img src="./images/blog/lista1.PNG" alt="image">
+                            <img src="./images/blog/lista2.PNG" alt="image">
+                          </li>
+
                           <li><strong>Extracción de datos</strong>: una vez autenticados, el script consulta la posición
                             actual en la lista de espera quirúrgica y la almacena en memoria.</li>
                           <li><strong>Persistencia</strong>: los resultados se registran en un archivo
@@ -187,10 +191,13 @@
                             un histórico de posiciones.
                           </li>
                           <li><strong>Comparación de estados</strong>: en cada ejecución, se comparan los datos
-                            obtenidos con la lectura anterior para identificar variaciones en el número de puesto.</li>
+                            obtenidos con la lectura anterior para identificar variaciones en el número de puesto.
+                            <img src="./images/blog/lista3.PNG" alt="image">
+                          </li>
                           <li><strong>Notificaciones</strong>: si se detecta una modificación, se genera un
                             <strong>correo electrónico automático</strong> utilizando <code>smtplib</code> informando
                             del cambio.
+                            <img src="./images/blog/lista4.PNG" alt="image">
                           </li>
                           <li><strong>Automatización de ejecución</strong>: el proceso se programa mediante el
                             <strong>Programador de Tareas de Windows</strong>, que ejecuta el script con la periodicidad
