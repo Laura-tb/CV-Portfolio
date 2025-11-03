@@ -2025,7 +2025,7 @@ audio {
 }
 
 .post-thumbnail {
-  background: #b2b2b2;
+  background: #fff;
   display: block;
   position: relative;
   width: 100%;
@@ -2034,7 +2034,7 @@ audio {
 
 .post-thumbnail img {
   display: block;
-  margin: 0px;
+  margin: 0 auto;
 }
 
 .entry-header {
@@ -2180,7 +2180,7 @@ audio {
 }
 
 .post-content img {
-  width: 60%;
+  
   display: block;
   margin: 1rem auto;
 }

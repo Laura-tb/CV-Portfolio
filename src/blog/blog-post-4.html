@@ -47,6 +47,7 @@
     gtag('config', 'G-Q4WKF96DCM');
   </script>
   <!--Google Analytics-->
+
 </head>
 
 <body>
@@ -119,29 +120,29 @@
     </div>
     <!-- /Mobile Header -->
 
+
     <!-- Main Content -->
 
 
     <div id="main" class="site-main">
       <div id="main-content" class="single-page-content">
         <div id="primary" class="content-area">
-
           <div class="ajax-page-nav">
+
             <div class="nav-item ajax-page-close-button">
               <a id="ajax-page-close-button" href="/index.html#about-me"><i class="lnr lnr-cross"></i></a>
             </div>
           </div>
 
           <div class="ajax-page-title">
-            <h2>Automatización de Lista de Espera quirúrgica - Comunidad de Madrid</h2>
+            <h2>Herramientas de gestión de proyectos: Jira y Confluence</h2>
           </div>
-
-
           <div id="content" class="page-content site-content" role="main">
             <article class="post">
 
+
               <div class="post-thumbnail">
-                <img src="/images/blog/lista_espera_1344x484.png" alt="image">
+                <img src="/images/blog/jira_confluence_collage_1342x587.png" alt="image">
               </div>
 
               <div class="post-content">
@@ -160,64 +161,118 @@
                   <div class="row">
                     <div class=" col-xs-12 col-sm-12 ">
                       <div class="col-inner">
-
-                        <p>
-                          En este proyecto se aborda la <strong>automatización del proceso de consulta de la lista de
-                            espera quirúrgica de la Comunidad de Madrid</strong>. El objetivo principal es eliminar la
-                          necesidad de realizar comprobaciones manuales, garantizando un seguimiento continuo y
-                          notificaciones automáticas en caso de cambios en la posición del paciente.
+                        <p><strong>Qué son Jira y Confluence y cómo los he usado para gestionar mis proyectos de
+                            desarrollo de software: </strong>
                         </p>
 
-                        <p>
-                          El flujo implementado se basa en un acceso autenticado al portal, utilizando las credenciales
-                          que requiere el sistema: <strong>fecha de nacimiento del paciente</strong> y el <strong>código
-                            proporcionado por el área de Admisión del hospital</strong>. A partir de ahí, el proceso se
-                          gestiona con un script desarrollado en <strong>Python</strong>.
+                        <p>En el mundo del desarrollo de software y la gestión de proyectos IT, la organización, la
+                          colaboración y la trazabilidad son claves. Dos herramientas ampliamente utilizadas en entornos
+                          profesionales —y también cada vez más en entornos educativos y personales— son Jira y
+                          Confluence, ambas desarrolladas por Atlassian.
+                          En esta entrada te explico qué son estas herramientas, cómo se utilizan conjuntamente, y cómo
+                          las he aplicado para organizar y ejecutar tres proyectos de desarrollo de software, incluyendo
+                          diseño de interfaces web, desarrollo en entorno cliente y desarrollo en entorno servidor.
                         </p>
 
-                        <p>
-                          <strong>Componentes técnicos de la solución:</strong>
-                        <ul style="text-align:justify;">
-                          <li><strong>Login automático</strong>: uso de librerías de Python para realizar la
-                            autenticación en el portal mediante POST requests.
-                            <img src="/images/blog/lista1.PNG" alt="image">
-                            <img src="/images/blog/lista2.PNG" alt="image">
-                          </li>
+                        <div class="container my-5">
+                          <div class="row g-4">
 
-                          <li><strong>Extracción de datos</strong>: una vez autenticados, el script consulta la posición
-                            actual en la lista de espera quirúrgica y la almacena en memoria.</li>
-                          <li><strong>Persistencia</strong>: los resultados se registran en un archivo
-                            <strong>Excel</strong> mediante la librería <code>openpyxl</code>, lo que permite mantener
-                            un histórico de posiciones.
-                          </li>
-                          <li><strong>Comparación de estados</strong>: en cada ejecución, se comparan los datos
-                            obtenidos con la lectura anterior para identificar variaciones en el número de puesto.
-                            <img src="/images/blog/lista3.PNG" alt="image">
-                          </li>
-                          <li><strong>Notificaciones</strong>: si se detecta una modificación, se genera un
-                            <strong>correo electrónico automático</strong> utilizando <code>smtplib</code> informando
-                            del cambio.
-                            <img src="/images/blog/lista4.PNG" alt="image">
-                          </li>
-                          <li><strong>Automatización de ejecución</strong>: el proceso se programa mediante el
-                            <strong>Programador de Tareas de Windows</strong>, que ejecuta el script con la periodicidad
-                            definida.
-                          </li>
+                            <!-- CARD JIRA -->
+                            <div class="col-md-6">
+                              <div class="card h-100 shadow-sm border-0">
+                                <div class="card-header bg-primary text-white fw-semibold">
+                                  ¿Qué es Jira?
+                                </div>
+                                <div class="card-body">
+                                  <p class="card-text">
+                                    Jira es una herramienta de gestión de proyectos basada en metodologías ágiles como
+                                    <strong>Scrum</strong> o <strong>Kanban</strong>. Su principal utilidad está en:
+                                  </p>
+                                  <ul>
+                                    <li>Crear <em>issues</em> (tareas, historias de usuario, bugs, épicas).</li>
+                                    <li>Organizar el trabajo por sprints, tableros y backlog.</li>
+                                    <li>Asignar tareas a miembros del equipo.</li>
+                                    <li>Hacer seguimiento del progreso mediante estados como <strong>Por hacer</strong>,
+                                      <strong>En curso</strong> y <strong>Listo</strong>.</li>
+                                    <li>Medir métricas como velocidad del equipo, carga de trabajo y cumplimiento de
+                                      entregas.</li>
+                                  </ul>
+                                  <div class="alert alert-primary mt-3 mb-0" role="alert">
+                                    💡 En mi caso, he utilizado <strong>Jira Cloud</strong> para dividir el trabajo en
+                                    tareas claras,
+                                    priorizarlas y organizarlas en ciclos de dos semanas mediante sprints planificados.
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- CARD CONFLUENCE -->
+                            <div class="col-md-6">
+                              <div class="card h-100 shadow-sm border-0">
+                                <div class="card-header bg-info text-white fw-semibold">
+                                  ¿Qué es Confluence?
+                                </div>
+                                <div class="card-body">
+                                  <p class="card-text">
+                                    Confluence es una herramienta complementaria a Jira que permite crear
+                                    <strong>documentación colaborativa</strong>. Se utiliza para:
+                                  </p>
+                                  <ul>
+                                    <li>Redactar especificaciones funcionales y técnicas.</li>
+                                    <li>Documentar decisiones, diseños, procesos y entregables.</li>
+                                    <li>Compartir conocimiento dentro del equipo.</li>
+                                    <li>Integrar páginas con tareas reales de Jira.</li>
+                                  </ul>
+                                  <div class="alert alert-info mt-3 mb-0" role="alert">
+                                    🔗 Cada historia o tarea en Jira puede estar enlazada a una página de Confluence con
+                                    su descripción,
+                                    criterios de aceptación, mockups o informes de validación.
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+
+
+                        <p><strong>Cómo he organizado mis proyectos</strong></p>
+
+                        <p>División por proyectos: He organizado mi trabajo en Jira en torno a tres proyectos principales, cada uno con su propia épica y conjunto de tareas:
+                        <img src="/images/blog/Jira1.PNG" alt="proyectos en Jira">
+                        </p>
+
+                        
+                        <p>Cada sprint tiene una duración de 2 semanas, en los que se planifican y ejecutan tareas
+                          distribuidas en las siguientes categorías:
+                        <ul>
+                          <li>Investigación (análisis de referencias, benchmarking)</li>
+                          <li>Diseño (mockups, tipografía, paleta de colores)</li>
+                          <li>Desarrollo (maquetación, interacción, lógica)</li>
+                          <li>Validación (accesibilidad, usabilidad)</li>
+                          <li>Documentación (capturas, reflexión, guías)</li>
                         </ul>
                         </p>
 
+                        <p><strong>Organización en Jira</strong></p>
                         <p>
-                          De esta forma, se consigue una <strong>automatización completa del ciclo de consulta,
-                            almacenamiento y notificación</strong>, liberando al paciente o al familiar de la necesidad
-                          de revisar manualmente el portal. Además, el enfoque modular permite extender la solución, por
-                          ejemplo, integrándola con sistemas de mensajería instantánea (Telegram, Teams, Slack) o
-                          dashboards de monitorización en tiempo real.
+                          En la vista de Backlog de Jira, he creado tareas agrupadas en sprints quincenales, asignadas a
+                          cada proyecto y clasificadas con etiquetas visuales según el tipo de actividad y su epic.
+                          En el cronograma se visualizan las épicas activas por sprint, lo que facilita ver la evolución
+                          del proyecto en el tiempo.
+                          Finalmente, con el tablero Kanban, gestiono el estado de las tareas conforme avanzan,
+                          moviéndolas de "Por hacer" a "En curso" y luego a "Listo".
+                          <img src="/images/blog/Jira2.PNG" alt="historias en Jira">
                         </p>
 
+                        <p><strong>Conclusión</strong></p>
                         <p>
-                          Este caso práctico demuestra cómo, con un stack muy básico (<strong>Python + Excel + SMTP +
-                            Programador de Tareas</strong>), es posible construir una solución de <strong>automatización
-                            eficiente y escalable</strong> para un proceso administrativo real.
+                          Gracias a la integración entre Jira y Confluence he podido planificar de forma ágil y
+                          estructurada, visualizar el progreso real de los proyectos, generar documentación de calidad y
+                          trazable, y simular un flujo de trabajo real como en un entorno profesional de desarrollo.
+                          Tanto si eres estudiante, freelance o profesional IT, te recomiendo incorporar estas
+                          herramientas a tu flujo de trabajo. Organizan, optimizan y —sobre todo— te preparan para
+                          trabajar en equipo como se hace en el mundo real.
                         </p>
 
                       </div>
@@ -229,7 +284,7 @@
                 <div class="entry-meta entry-meta-bottom">
                   <div class="date-author">
                     <span class="entry-date">
-                      <i class="far fa-clock"></i> <span class="entry-date"> Junio 2025</span>
+                      <i class="far fa-clock"></i> <span class="entry-date"> Octubre 2025</span>
                     </span>
                   </div>
                 </div>
@@ -238,19 +293,23 @@
 
             <nav class="navigation post-navigation clearfix">
               <div class="nav-links">
-                <a href="/src/blog/blog-post-2.html" rel="prev">
+
+                <a href="/src/blog/blog-post-1.html" rel="prev">
                   <span class="meta-nav badge badge-pill badge-primary">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                       stroke-linecap="round" stroke-linejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                       <path d="M15 6l-6 6l6 6" />
                     </svg>
-                    SAP ABAP
+                    Lista de
+                    espera
                   </span>
                 </a>
 
-                <a href="/src/blog/blog-post-4.html" rel="next"><span class="meta-nav badge badge-pill badge-primary">
-                    Herramientas
+                <a href="/src/blog/blog-post-3.html" rel="next">
+                  <span class="meta-nav badge badge-pill badge-primary">
+
+                    GPTs Calidad
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                       stroke-linecap="round" stroke-linejoin="round"
                       class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right">
@@ -259,6 +318,7 @@
                     </svg>
                   </span>
                 </a>
+
               </div>
             </nav><!-- .navigation -->
 
@@ -278,6 +338,7 @@
   <script src="/js/masonry.pkgd.min.js"></script>
   <script src="/js/owl.carousel.min.js"></script>
   <script src="/js/jquery.magnific-popup.min.js"></script>
+
 
   <script src='https://www.google.com/recaptcha/api.js'></script>
   <script src="/js/main.js"></script>
