@@ -47,6 +47,7 @@
     gtag('config', 'G-Q4WKF96DCM');
   </script>
   <!--Google Analytics-->
+
 </head>
 
 <body>
@@ -119,29 +120,29 @@
     </div>
     <!-- /Mobile Header -->
 
+
     <!-- Main Content -->
 
 
     <div id="main" class="site-main">
       <div id="main-content" class="single-page-content">
         <div id="primary" class="content-area">
-
           <div class="ajax-page-nav">
+
             <div class="nav-item ajax-page-close-button">
               <a id="ajax-page-close-button" href="/index.html#about-me"><i class="lnr lnr-cross"></i></a>
             </div>
           </div>
 
           <div class="ajax-page-title">
-            <h2>Automatización de Lista de Espera quirúrgica - Comunidad de Madrid</h2>
+            <h2>¡¡ Certificado conseguido !!</h2>
           </div>
-
-
           <div id="content" class="page-content site-content" role="main">
             <article class="post">
 
+
               <div class="post-thumbnail">
-                <img src="/images/blog/lista_espera_1344x484.png" alt="image">
+                <img src="/images/blog/sap_abap.JPG" alt="image">
               </div>
 
               <div class="post-content">
@@ -160,65 +161,61 @@
                   <div class="row">
                     <div class=" col-xs-12 col-sm-12 ">
                       <div class="col-inner">
+                        <h2>Lo que he aprendido preparando la certificación C_ABAPD_2507 – Backend Developer ABAP Cloud
+                        </h2>
 
-                        <p>
-                          En este proyecto se aborda la <strong>automatización del proceso de consulta de la lista de
-                            espera quirúrgica de la Comunidad de Madrid</strong>. El objetivo principal es eliminar la
-                          necesidad de realizar comprobaciones manuales, garantizando un seguimiento continuo y
-                          notificaciones automáticas en caso de cambios en la posición del paciente.
+                        <p>En los últimos meses he estado preparándome para la certificación C_ABAPD_2507, centrada en
+                          el desarrollo backend en entornos SAP S/4HANA y SAP BTP bajo el enfoque clean core. Ha sido un
+                          recorrido intenso en el que he entendido cómo ha evolucionado ABAP hacia un modelo mucho más
+                          moderno, modular y preparado para la nube.</p>
+
+                        <p>Estos son los aprendizajes clave que me llevo del proceso:</p>
+
+                        <p><strong>1. Pensar en clean core</strong></p>
+
+                        <p>La base de ABAP Cloud es no modificar el estándar. Todas las ampliaciones deben hacerse con
+                          extensiones controladas que no pongan en riesgo las actualizaciones ni la estabilidad del
+                          sistema. Es un cambio de mentalidad total respecto al ABAP clásico.</p>
+
+                        <p><strong>2. Modelar datos de forma moderna</strong></p>
+
+                        <p>El modelado de datos ahora gira principalmente en torno a CDS View Entities. Permiten
+                          describir datos, exponerlos como API y añadir anotaciones sin necesidad de programar lógica
+                          manualmente. Son la piedra angular de todo lo que viene después.</p>
+
+                        <p><strong>3. RAP como nuevo modelo de desarrollo</strong></p>
+
+                        <p>El ABAP RESTful Application Programming Model (RAP) es la forma recomendada de crear
+                          aplicaciones transaccionales. A través de Business Objects, definiciones de comportamiento y
+                          servicios OData, puedes construir soluciones completas sin tocar el estándar y completamente
+                          listas para la nube.</p>
+
+                        <p><strong>4. Extender sin romper</strong></p>
+
+                        <p>Aprendí a distinguir entre extensiones In-App (dentro de S/4HANA) y Side-by-Side (en BTP).
+                          Cada una tiene su propósito, pero ambas comparten lo mismo: ampliar la funcionalidad sin
+                          comprometer el core y aprovechando APIs oficiales.</p>
+
+                        <p><strong>5. Calidad del código como requisito, no como opción</strong></p>
+
+                        <p>ATC, variantes de chequeo, buenas prácticas de diseño y revisiones automáticas forman parte
+                          del día a día. Nada pasa a productivo si no cumple los estándares cloud de SAP. Es una forma
+                          de trabajar más seria, ordenada y sostenible.</p>
+
+                        <p><strong>6. Desarrollar en ADT (Eclipse), no en SAP GUI</strong></p>
+
+                        <p></p>ABAP Cloud se desarrolla desde Eclipse con ADT, un entorno mucho más moderno: navegación
+                        rápida, editor avanzado, herramientas de análisis y acceso directo a todos los objetos de
+                        desarrollo.
                         </p>
 
-                        <p>
-                          El flujo implementado se basa en un acceso autenticado al portal, utilizando las credenciales
-                          que requiere el sistema: <strong>fecha de nacimiento del paciente</strong> y el <strong>código
-                            proporcionado por el área de Admisión del hospital</strong>. A partir de ahí, el proceso se
-                          gestiona con un script desarrollado en <strong>Python</strong>.
-                        </p>
+                        <h2>Conclusión</h2>
 
-                        <p>
-                          <strong>Componentes técnicos de la solución:</strong>
-                        <ul style="text-align:justify;">
-                          <li><strong>Login automático</strong>: uso de librerías de Python para realizar la
-                            autenticación en el portal mediante POST requests.
-                            <img src="/images/blog/lista1.PNG" alt="image">
-                            <img src="/images/blog/lista2.PNG" alt="image">
-                          </li>
+                        <p>Preparar este examen ha sido mucho más que aprender comandos o teoría: ha sido entender cómo se
+                        construyen hoy las soluciones SAP modernas. La certificación confirma conocimientos, pero sobre
+                        todo representa un cambio de enfoque hacia un ABAP más limpio, cloud-ready y preparado para el
+                        futuro.</p>
 
-                          <li><strong>Extracción de datos</strong>: una vez autenticados, el script consulta la posición
-                            actual en la lista de espera quirúrgica y la almacena en memoria.</li>
-                          <li><strong>Persistencia</strong>: los resultados se registran en un archivo
-                            <strong>Excel</strong> mediante la librería <code>openpyxl</code>, lo que permite mantener
-                            un histórico de posiciones.
-                          </li>
-                          <li><strong>Comparación de estados</strong>: en cada ejecución, se comparan los datos
-                            obtenidos con la lectura anterior para identificar variaciones en el número de puesto.
-                            <img src="/images/blog/lista3.PNG" alt="image">
-                          </li>
-                          <li><strong>Notificaciones</strong>: si se detecta una modificación, se genera un
-                            <strong>correo electrónico automático</strong> utilizando <code>smtplib</code> informando
-                            del cambio.
-                            <img src="/images/blog/lista4.PNG" alt="image">
-                          </li>
-                          <li><strong>Automatización de ejecución</strong>: el proceso se programa mediante el
-                            <strong>Programador de Tareas de Windows</strong>, que ejecuta el script con la periodicidad
-                            definida.
-                          </li>
-                        </ul>
-                        </p>
-
-                        <p>
-                          De esta forma, se consigue una <strong>automatización completa del ciclo de consulta,
-                            almacenamiento y notificación</strong>, liberando al paciente o al familiar de la necesidad
-                          de revisar manualmente el portal. Además, el enfoque modular permite extender la solución, por
-                          ejemplo, integrándola con sistemas de mensajería instantánea (Telegram, Teams, Slack) o
-                          dashboards de monitorización en tiempo real.
-                        </p>
-
-                        <p>
-                          Este caso práctico demuestra cómo, con un stack muy básico (<strong>Python + Excel + SMTP +
-                            Programador de Tareas</strong>), es posible construir una solución de <strong>automatización
-                            eficiente y escalable</strong> para un proceso administrativo real.
-                        </p>
 
                       </div>
                     </div>
@@ -229,7 +226,7 @@
                 <div class="entry-meta entry-meta-bottom">
                   <div class="date-author">
                     <span class="entry-date">
-                      <i class="far fa-clock"></i> <span class="entry-date"> Junio 2025</span>
+                      <i class="far fa-clock"></i> <span class="entry-date"> Diciembre 2025</span>
                     </span>
                   </div>
                 </div>
@@ -238,19 +235,23 @@
 
             <nav class="navigation post-navigation clearfix">
               <div class="nav-links">
-                <a href="/src/blog/blog-post-2.html" rel="prev">
+
+                <a href="/src/blog/blog-post-1.html" rel="prev">
                   <span class="meta-nav badge badge-pill badge-primary">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                       stroke-linecap="round" stroke-linejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                       <path d="M15 6l-6 6l6 6" />
                     </svg>
-                    SAP ABAP
+                    Lista de
+                    espera
                   </span>
                 </a>
 
-                <a href="/src/blog/blog-post-5.html" rel="next"><span class="meta-nav badge badge-pill badge-primary">
-                    ABAP Cloud
+                <a href="/src/blog/blog-post-4.html" rel="next">
+                  <span class="meta-nav badge badge-pill badge-primary">
+
+                    Herramientas
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                       stroke-linecap="round" stroke-linejoin="round"
                       class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right">
@@ -259,6 +260,7 @@
                     </svg>
                   </span>
                 </a>
+
               </div>
             </nav><!-- .navigation -->
 
@@ -278,6 +280,7 @@
   <script src="/js/masonry.pkgd.min.js"></script>
   <script src="/js/owl.carousel.min.js"></script>
   <script src="/js/jquery.magnific-popup.min.js"></script>
+
 
   <script src='https://www.google.com/recaptcha/api.js'></script>
   <script src="/js/main.js"></script>
