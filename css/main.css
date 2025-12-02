@@ -3402,6 +3402,10 @@ body {
   flex: 1;
 }
 
+.ajax-page-title h3 {
+  text-align: left;
+}
+
 .hero-badge {
   background-color: rgba(0, 0, 0, .2);
   border-radius: 999px;
