@@ -3379,3 +3379,168 @@ body {
   flex: 1;
   width: 100%;
 }
+
+/* ====== Blog post SAP certificate ====== */
+
+.sap-cert-post .post-hero-card {
+  margin: 0 40px 25px;
+  padding: 24px 30px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.sap-cert-post .hero-logo img {
+  max-width: 150px;
+  border-radius: 10px;
+}
+
+.sap-cert-post .hero-copy {
+  flex: 1;
+}
+
+.ajax-page-title h3 {
+  text-align: left;
+}
+
+.hero-badge {
+  background-color: rgba(0, 0, 0, .2);
+  border-radius: 999px;
+  padding: 0.25em 0.9em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+.sap-cert-post .entry-title {
+  color: #fff;
+  margin: 10px 0 5px;
+}
+
+.hero-subtitle {
+  margin: 0 0 10px;
+  color: rgba(255, 255, 255, .9);
+}
+
+.hero-meta {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, .85);
+}
+
+.hero-meta i {
+  margin-right: 4px;
+}
+
+/* que el contenido arranque pegado al hero */
+.sap-cert-post .post-content {
+  margin-top: 10px;
+}
+
+/* tarjetas de aprendizajes */
+.learning-steps {
+  margin-top: 25px;
+}
+
+.learning-card {
+  position: relative;
+  background-color: var(--color-bg-light);
+  border-radius: 12px;
+  padding: 16px 16px 16px 48px;
+  margin-bottom: 16px;
+  border-left: 4px solid var(--color-primary);
+}
+
+.learning-card h3 {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-size: 18px;
+}
+
+.learning-number {
+  position: absolute;
+  left: 16px;
+  top: 18px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlight-box,
+.conclusion-box {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 18px 20px;
+  border: 1px solid var(--color-bg-dark);
+  margin-bottom: 20px;
+}
+
+/* sidebar derecha */
+.sap-sidebar {
+  margin-top: 10px;
+}
+
+.sap-sidebar-card {
+  background-color: var(--color-bg-light);
+  border-radius: 12px;
+  padding: 18px 18px 14px;
+  border: 1px solid var(--color-bg-dark);
+  margin-bottom: 16px;
+}
+
+.sap-sidebar-card h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.check-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.check-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+
+.check-list li:before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 11px;
+  color: var(--color-success);
+}
+
+/* responsive hero */
+@media (max-width: 768px) {
+  .sap-cert-post .post-hero-card {
+    margin: 10px 20px 20px;
+    padding: 18px 20px;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .sap-cert-post .post-content {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
