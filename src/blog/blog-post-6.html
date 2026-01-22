@@ -185,27 +185,53 @@
                             Diseñar webs que puedan usar personas con discapacidad visual, auditiva, motora, cognitiva,
                             limitaciones temporales o tecnologías asistivas como lectores de pantalla o teclado.
                           </p>
+                          <p>
+                            La accesibilidad se define fundamentalmente como la <strong>facilidad de acceso a un sitio
+                              web</strong>, refiriéndose tanto a la forma de llegar a él como a la sencillez en su
+                            manejo. Es un concepto que debe estar presente durante todo el proceso de diseño e
+                            implementación de una interfaz web para permitir que cualquier usuario pueda utilizar el
+                            sitio con facilidad.
+                          </p>
                         </section>
 
                         <section>
-                          <h2>Normativa y estándares</h2>
-                          <h3>WCAG</h3>
+
+                          <h3>Principios fundamentales (WCAG 2.0):</h3>
                           <ul>
-                            <li><strong>Perceptible</strong></li>
-                            <li><strong>Operable</strong></li>
-                            <li><strong>Comprensible</strong></li>
-                            <li><strong>Robusto</strong></li>
+                            <li><strong>Perceptible:</strong></li>La información y los componentes de la interfaz deben
+                            ser mostrados de forma que cualquier usuario pueda comprenderlos (ej. usar textos
+                            alternativos para imágenes).
+                            <li><strong>Operable:</strong></li>Los elementos deben ser fácilmente accesibles y
+                            manejables, por ejemplo, permitiendo la navegación completa solo con el teclado.
+                            <li><strong>Comprensible:</strong></li>El contenido y el funcionamiento del sitio deben ser
+                            fáciles de entender y previsibles para el usuario.
+                            <li><strong>Robusto:</strong></li>El diseño debe ser compatible con el mayor número posible
+                            de aplicaciones y navegadores, tanto actuales como futuros.
                           </ul>
-                          <p>Niveles: A, AA (objetivo), AAA.</p>
-                        </section>
 
-                        <section>
-                          <h2>Normativa legal</h2>
+                          <h3>Estándares y niveles:</h3>
+                          <p>La accesibilidad está regulada por organismos como el W3C (World Wide Web Consortium) y sus
+                            pautas WCAG. Para certificar que un sitio es accesible, este debe cumplir con ciertos
+                            niveles de conformidad: <strong>Nivel A (mínimo), Nivel AA y Nivel AAA (máximo)</strong>.
+                          </p>
+
+
+                          <h3>Normativa legal</h3>
                           <ul>
-                            <li>Directiva (UE) 2016/2102</li>
-                            <li>EN 301 549</li>
+                            <li>Directiva (UE) 2016/2102 – Web Accessibility Directive</li>
+                            <li>European Accessibility Act (EAA) – Directiva 2019/882</li>
                             <li>Real Decreto 1112/2018</li>
-                            <li>European Accessibility Act (2025)</li>
+                            <li>Ley 11/2023 de accesibilidad digital</li>
+                            <li>UNE-EN 301 549 (España) / EN 301 549 (Europa)</li>
+                            <li>WCAG (Web Content Accessibility Guidelines)</li>
+                          </ul>
+
+                          <h3>¿A quién afecta esta normativa?</h3>
+                          <ul>
+                            <li>Sector público - Desde 2018</li>
+                            <li>Ecommerce - Desde 2025</li>
+                            <li>Webs corporativas con servicios - Desde 2025</li>
+                            <li>Microempresas sin servicios esenciales - Exenciones parciales</li>
                           </ul>
                         </section>
 
@@ -218,9 +244,10 @@
                           </blockquote>
 
                           <p>
-                            La accesibilidad elimina barreras y tiene implicaciones legales.
-                            La usabilidad mejora la experiencia y eficiencia.
+                            Aunque la accesibilidad y la usabilidad están estrechamente relacionadas y deben considerarse conjuntamente durante el diseño de interfaces, se establecen distinciones claras entre ambos conceptos basadas en su objetivo y el público al que se dirigen.
                           </p>
+                          <p>Mientras la <strong>ACCESIBILIDAD</strong> se refiere a la <strong>facilidad de acceso</strong> a un sitio web, es decir, permite que cualquier persona pueda llegar al sitio y manejarlo; la <strong>USABILIDAD</strong> se refiere a la <strong>facilidad de uso</strong> de la interfaz, ya que su foco está en el proceso de interacción entre el usuario y la interfaz para asegurar que sea sencilla de manejar.</p>
+                          <p>En resumen, un ejemplo claro de accesibilidad sería implementar un sistema que permita a un usuario con discapacidad motora manipular la interfaz mediante dispositivos especiales como un trackball. Por el contrario, un ejemplo de usabilidad sería la disposición lógica de los elementos y menús para que cualquier usuario encuentre lo que busca rápidamente y sin confusión</p>
                         </section>
 
                         <section class="learning-steps">
@@ -229,56 +256,53 @@
 
                           <article class="learning-card">
                             <span class="learning-number">1</span>
-                            <h3>HTML semántico</h3>
-                            <p>Uso de header, nav, main, section y jerarquía correcta de headings.</p>
+                            <h3>Estructura semántica HTML</h3>
+                            <p>Uso correcto de header, nav, main, section, footer y jerarquía de encabezados (h1–h6) para mejorar navegación y lectores de pantalla.</p>
                           </article>
 
                           <article class="learning-card">
                             <span class="learning-number">2</span>
-                            <h3>Navegación por teclado</h3>
-                            <p>Focus visible, gestión de foco en menú móvil y navegación completa sin ratón.</p>
+                            <h3>Navegación completa por teclado</h3>
+                            <p>Todo el sitio es operable sin ratón, con foco visible y control del foco en menús y modales.</p>
                           </article>
 
                           <article class="learning-card">
                             <span class="learning-number">3</span>
-                            <h3>Inputs accesibles</h3>
-                            <p>Labels asociados, no depender solo del placeholder y botones descriptivos.</p>
+                            <h3>Formularios accesibles</h3>
+                            <p>Inputs con label asociado, placeholders no informativos, y botones con texto claro y descriptivo.</p>
                           </article>
 
                           <article class="learning-card">
                             <span class="learning-number">4</span>
                             <h3>Menú móvil accesible</h3>
-                            <p>aria-expanded, aria-controls y control de foco.</p>
+                            <p>Uso de atributos ARIA (aria-expanded, aria-controls) y gestión del foco al abrir/cerrar el menú.</p>
                           </article>
 
                           <article class="learning-card">
                             <span class="learning-number">5</span>
-                            <h3>Animaciones controladas</h3>
-                            <p>Respeto a prefers-reduced-motion (WCAG 2.2.2).</p>
+                            <h3>Control de animaciones</h3>
+                            <p>Respeto a prefers-reduced-motion para reducir animaciones a usuarios sensibles al movimiento.</p>
                           </article>
 
                           <article class="learning-card">
                             <span class="learning-number">6</span>
                             <h3>Contraste de color</h3>
-                            <p>Colores AA y sin depender solo del color para transmitir información.</p>
+                            <p>Colores con contraste suficiente (WCAG AA) y sin depender solo del color para transmitir información.</p>
                           </article>
 
                           <article class="learning-card">
                             <span class="learning-number">7</span>
                             <h3>Imágenes accesibles</h3>
-                            <p>Alt descriptivo o vacío para decorativas.</p>
+                            <p>Uso de alt descriptivo en imágenes informativas y alt="" en imágenes decorativas.</p>
                           </article>
 
                           <article class="learning-card">
                             <span class="learning-number">8</span>
-                            <h3>Componentes interactivos</h3>
-                            <p>Acordeones con aria y estados visibles.</p>
+                            <h3>Componentes interactivos accesibles</h3>
+                            <p>Acordeones y elementos dinámicos con roles ARIA y estados visibles (expandido/colapsado).</p>
                           </article>
 
                         </section>
-
-
-
                       </div>
                     </main>
 
@@ -287,10 +311,8 @@
                       <div class="sap-sidebar-card">
                         <h4>Resumen</h4>
                         <ul class="check-list">
-                          <li>WCAG AA</li>
-                          <li>Keyboard</li>
-                          <li>ARIA</li>
-                          <li>Contraste</li>
+                          <li>Accesibilidad Web</li>                     
+                          <li>Diseño inclusivo</li>                     
                         </ul>
                       </div>
 
@@ -298,8 +320,8 @@
                         <h4>Stack</h4>
                         <span class="badge badge-secondary">HTML</span>
                         <span class="badge badge-secondary">CSS</span>
-                        <span class="badge badge-secondary">Bootstrap</span>
                         <span class="badge badge-secondary">WCAG</span>
+                        <span class="badge badge-secondary">UX/UI</span>
                       </div>
 
                       <div class="sap-sidebar-card">
@@ -430,8 +452,7 @@
                     <section class="conclusion-box">
                       <h2>Conclusión</h2>
                       <p>
-                        La accesibilidad no es un extra: es desarrollo profesional.
-                        Mejora UX, reduce problemas futuros y prepara la web para requisitos legales.
+                        La importancia de la accesibilidad y la usabilidad en el desarrollo de un sitio web radica en que ambos son ejes fundamentales que garantizan el éxito y la calidad profesional de la interfaz. Mientras que la accesibilidad se asegura de que cualquier usuario pueda acceder a la información, independientemente de sus capacidades físicas o técnicas, la usabilidad se centra en que, una vez dentro, el sitio sea fácil de manejar y satisfactorio, por tanto ambos conceptos son esenciales para crear experiencias digitales inclusivas y efectivas.
                       </p>
                     </section>
 
