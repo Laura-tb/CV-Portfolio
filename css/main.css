@@ -1649,6 +1649,25 @@ audio {
   border-radius: 8px;
 }
 
+/* Blog Accesibilidad */
+.post-content ul {
+  margin-left: 1rem;
+}
+
+.post-content ul li {
+  margin-bottom: .4rem;
+}
+
+blockquote {
+  background: var(--color-bg-light);
+  padding: 12px 18px;
+  border-left: 4px solid var(--color-primary);
+  font-size: 15px;
+}
+
+figcaption{
+  text-align: center;
+}
 
 /* =======================================
 7.5. Contact subpage
@@ -3383,7 +3402,7 @@ body {
 /* ====== Blog post SAP certificate ====== */
 
 .sap-cert-post .post-hero-card {
-  margin: 0 40px 25px;
+  margin: 0 0px 25px;
   padding: 24px 30px;
   border-radius: 14px;
   background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
@@ -3395,7 +3414,7 @@ body {
 
 .sap-cert-post .hero-logo img {
   max-width: 150px;
-  border-radius: 10px;
+  border-radius: 100px;
 }
 
 .sap-cert-post .hero-copy {
@@ -3483,12 +3502,10 @@ body {
   padding: 18px 20px;
   border: 1px solid var(--color-bg-dark);
   margin-bottom: 20px;
+  width:100%;
 }
 
 /* sidebar derecha */
-.sap-sidebar {
-  margin-top: 10px;
-}
 
 .sap-sidebar-card {
   background-color: var(--color-bg-light);
@@ -3503,6 +3520,17 @@ body {
   margin-bottom: 10px;
   font-size: 16px;
 }
+
+.sap-sidebar a {
+  color: var(--color-primary);
+}
+
+.sap-sidebar a:hover,
+.sap-sidebar a:focus {
+  text-decoration: underline;
+  
+}
+
 
 .check-list {
   list-style: none;
